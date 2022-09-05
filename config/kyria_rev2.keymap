@@ -22,29 +22,29 @@
 
         default_layer {
             bindings = <
-                &kp ESC  &kp Q &kp W    &kp F       &kp P      &kp B                                                         &kp J      &kp L     &kp U       &kp Y       &kp SEMI       &kp DEL
-                &kp TAB  &kp A &kp R    &kp S       &kp T      &kp G                                                         &kp M      &kp N     &kp E       &kp I       &kp O          &kp SQT
-                &kp RET  &kp Z &kp X    &kp C       &kp D      &kp V      &mo NAV  &kp RET              &kp RET    &kp RET  &kp K      &kp H     &kp COMMA   &kp DOT     &kp QMARK      &kp RET
-                                        &kp RET     &kp LCTRL  &kp LSHFT  &kp LALT  &kp LGUI              &kp RALT   &kp BSPC &kp SPACE  &mo NUM   &kp RET
-        >;   
+                &kp ESC     &kp Q       &kp W       &kp F       &kp P       &kp B                                                       &kp J       &kp L       &kp U           &kp Y       &kp SEMI       &kp DEL
+                &kp TAB     &kp A       &kp R       &kp S       &kp T       &kp G                                                       &kp M       &kp N       &kp E           &kp I       &kp O          &kp SQT
+                &kp RET     &kp Z       &kp X       &kp C       &kp D       &kp V       &kp LGUI    &kp RET     &kp LCTRL  &kp LGUI     &kp K       &kp H       &kp COMMA       &kp DOT     &kp QMARK      &kp RET
+                                                    &kp RET     &mo NAV     &kp LSHFT   &kp LALT    &kp LCTRL   &kp RALT   &kp BSPC     &kp SPACE   &mo NUM     &kp RET
+        >;      
 
         sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP K_SCROLL_DOWN>;
         };
         num_layer {
-        bindings = <
-            &trans &trans &trans &trans &trans &trans                                               &kp CARET   &kp N7     &kp N8       &kp N9      &kp MINUS       &kp DEL
-            &trans &trans &trans &trans &trans &trans                                               &kp PLUS    &kp N4     &kp N5       &kp N6      &kp N0          &kp DOT
-            &trans &trans &trans &trans &trans &trans &trans &trans             &trans   &trans     &kp STAR    &kp N1     &kp N2       &kp N3      &kp SLASH       &trans
-                                &trans &trans &trans &trans &trans              &trans   &trans     &trans      &trans     &trans
-        >;
-        };  
-        nav_layer {
             bindings = <
-            &trans  &trans      &kp PG_UP   &kp UP      &kp PG_DN   &trans                                      &kp AMPS &kp EXCL &kp UNDER &kp LBRC &kp RBRC &trans
-            &trans  &kp HOME    &kp LEFT    &kp DOWN    &kp RIGHT   &kp END                                     &kp PIPE &kp LPAR &kp RPAR &kp LBKT &kp RBKT &kp EQUAL
-            &trans  &trans      &trans      &trans      &trans      &trans &trans &trans          &trans &trans &kp PRCNT &kp BSLH &kp HASH &kp DLLR &kp TILDE &kp AT
-                                            &trans      &trans      &trans &trans &trans          &trans &trans &trans &trans &trans
-        >;
+                &trans      &trans      &trans      &trans      &trans      &trans                                                      &kp CARET   &kp N7      &kp N8          &kp N9      &kp MINUS       &kp DEL
+                &trans      &trans      &trans      &trans      &trans      &trans                                                      &kp PLUS    &kp N4      &kp N5          &kp N6      &kp N0          &kp DOT
+                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans       &trans     &trans      &kp STAR    &kp N1      &kp N2          &kp N3      &kp SLASH       &trans
+                                                    &trans      &trans      &trans      &trans      &trans       &trans     &trans      &trans      &trans      &trans
+            >;
+        };  
+            nav_layer {
+                bindings = <
+                &trans      &trans      &kp PG_UP   &kp UP      &kp PG_DN   &trans                                                      &kp AMPS    &kp EXCL    &kp UNDER       &kp LBRC        &kp RBRC    &trans
+                &trans      &kp HOME    &kp LEFT    &kp DOWN    &kp RIGHT   &kp END                                                     &kp PIPE    &kp LPAR    &kp RPAR        &kp LBKT        &kp RBKT    &kp EQUAL
+                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans        &trans    &trans      &kp PRCNT   &kp BSLH    &kp HASH        &kp DLLR        &kp TILDE   &kp AT
+                                                    &trans      &trans      &trans      &trans      &trans        &trans    &trans      &trans      &trans      &trans
+            >;
         }; 
     
 
