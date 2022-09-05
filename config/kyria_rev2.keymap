@@ -21,7 +21,7 @@
                             &kp RET     &kp LCTRL  &kp LSHFT  &kp LALT  &kp RET              &kp RALT   &kp BSPC &kp SPACE  &kp RET   &kp RET
    >;   
 
-   sensor-bindings = <&inc_dec_kp PG_UP PG_DN;
+   sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
   };
  };
 };
