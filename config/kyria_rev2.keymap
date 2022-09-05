@@ -6,20 +6,22 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
 
 / {
-	keymap {
-		compatible = "zmk,keymap";
+ keymap {
+  compatible = "zmk,keymap";
 
-		default_layer {
-			bindings = <
-	&kp ESC   &kp Q &kp W 	 &kp F 	 &kp P 	 	&kp B                                                		&kp J 	 &kp L      &kp U       &kp Y       &kp ;    	&kp DEL
-	&kp TAB   &kp A &kp R 	 &kp S 	 &kp T 	 	&kp G                                                	    &kp M 	 &kp N      &kp E       &kp I       &kp O 	    &kp SQT
-	&kp LSHFT &kp Z &kp X 	 &kp C 	 &kp D 	 	&kp V 	   	&kp LWIN  &kp LSHFT 	&kp LWIN    &kp RET 	&kp K 	 &kp H      &kp COMMA   &kp DOT     &kp FSLH 	&kp RCTRL
-	                		 &kp RET &kp DEL 	&kp LSHFT 	&kp SPACE &kp LALT  	&kp RET  	&kp RALT  	&kp BSPC &kp BSPC 	&kp RALT
-			>;
+  default_layer {
+   bindings = <
+    &kp ESC     &kp Q &kp W &kp F   &kp P   &kp B                                                           &kp J      &kp L       &kp U       &kp Y       &kp ;     &kp DEL
+    &kp TAB     &kp A &kp R &kp S   &kp T   &kp G                                                           &kp M      &kp N       &kp E       &kp I       &kp O     &kp SQT
+    &none       &kp Z &kp X &kp C   &kp D   &kp V      &kp LWIN    &none              &none    &kp RET      &kp K      &kp H       &kp COMMA   &kp DOT     &kp FSLH  &none
+                            &none   &none   &kp LSHFT  &kp LALT    &none              &kp RALT &kp BSPC     &kp SPACE  &none       &none
+   >;   
 
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-		};
-	};
+   sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+  };
+ };
 };
