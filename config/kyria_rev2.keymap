@@ -24,8 +24,8 @@
             bindings = <
                 &kp ESC  &kp Q &kp W    &kp F       &kp P      &kp B                                                         &kp J      &kp L     &kp U       &kp Y       &kp SEMI       &kp DEL
                 &kp TAB  &kp A &kp R    &kp S       &kp T      &kp G                                                         &kp M      &kp N     &kp E       &kp I       &kp O          &kp SQT
-                &kp RET  &kp Z &kp X    &kp C       &kp D      &kp V      &kp LGUI  &kp RET              &kp RET    &kp RET  &kp K      &kp H     &kp COMMA   &kp DOT     &kp QMARK      &kp RET
-                                        &kp NAV     &kp LCTRL  &kp LSHFT  &kp LALT  &kp RET              &kp RALT   &kp BSPC &kp SPACE  &mo NUM   &kp RET
+                &kp RET  &kp Z &kp X    &kp C       &kp D      &kp V      &kp NAV  &kp RET              &kp RET    &kp RET  &kp K      &kp H     &kp COMMA   &kp DOT     &kp QMARK      &kp RET
+                                        &kp RET     &kp LCTRL  &kp LSHFT  &kp LALT  &kp LGUI              &kp RALT   &kp BSPC &kp SPACE  &mo NUM   &kp RET
         >;   
 
         sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP K_SCROLL_DOWN>;
