@@ -11,9 +11,8 @@
 
 #define DEFAULT 0
 #define NUM   1
-#define NAV   2
-#define SYM   3
-#define FN    4
+#define SYM   2
+#define FN    3
 
 
 / {
