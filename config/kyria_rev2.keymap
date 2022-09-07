@@ -39,9 +39,9 @@
         };  
             sym_layer {
                 bindings = <
-                &none           &none           &kp PG_UP   &kp UP      &kp PG_DN   &none                                                       &kp AMPS    &kp EXCL    &kp UNDER       &kp LBRC        &kp RBRC    &trans
-                &none           &kp HOME        &kp LEFT    &kp DOWN    &kp RIGHT   &kp END                                                     &kp PIPE    &kp LPAR    &kp RPAR        &kp LBKT        &kp RBKT    &kp EQUAL
-                &none           &none           &none       &none       &none       &none       &trans       &trans      &trans      &trans     &kp PRCNT   &kp BSLH    &kp HASH        &kp DLLR        &kp TILDE   &kp AT
+                &none           &none           &kp LBRC    &kp RBRC    &none       &none                                                       &kp CARET   &kp PIPE    &kp DLLR    &kp GRAVE       &kp MINUS      &trans
+                &none           &kp LBKT        &kp RBKT    &kp LPAR    &kp RPAR    &none                                                       &kp PLUS    &kp EXCL    &kp UNDER   &kp TILDE       &kp EQUAL      &kp AT
+                &none           &none           &none       &none       &none       &none       &trans       &trans      &trans      &trans     &kp STAR    &kp HASH    &kp PRCNT   &kp AMPS        &kp BSLH       &trans          
                                                             &trans      &none       &trans      &trans       &trans      &trans      &trans     &trans      &trans      &trans
             >;
         };
@@ -58,7 +58,7 @@
     };
 };
 
-//          sym_layer {
+//          _layer {
 //               bindings = <
 //               &none          &none            &none       &none       &none       &none                                                   &none          &none           &none       &none       &none       &none    
 //               &none          &none            &none       &none       &none       &none                                                   &none          &none           &none       &none       &none       &none    
