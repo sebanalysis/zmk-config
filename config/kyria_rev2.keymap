@@ -43,7 +43,7 @@
                 &trans      &trans      &kp PG_UP   &kp UP      &kp PG_DN   &trans                                                      &kp AMPS    &kp EXCL    &kp UNDER       &kp LBRC        &kp RBRC    &trans
                 &trans      &kp HOME    &kp LEFT    &kp DOWN    &kp RIGHT   &kp END                                                     &kp PIPE    &kp LPAR    &kp RPAR        &kp LBKT        &kp RBKT    &kp EQUAL
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans    &kp LGUI      &kp PRCNT   &kp BSLH    &kp HASH        &kp DLLR        &kp TILDE   &kp AT
-                                                    &trans      &trans      &trans      &trans      &trans      &kp LALT  &kp LCTRL     &kp LSHFT   &trans      &trans
+                                                    &trans      &trans      &trans      &trans      &trans      &kp LALT  &kp LCTRL     &kp RSHFT   &trans      &trans
             >;
         }; 
     
