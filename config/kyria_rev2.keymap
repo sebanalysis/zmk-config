@@ -24,7 +24,7 @@
             bindings = <
                 &kp ESC         &kp Q           &kp W       &kp F       &kp P       &kp B                                                       &kp J       &kp L       &kp U           &kp Y       &kp SEMI       &kp DEL
                 &kp TAB         &kp A           &kp R       &kp S       &kp T       &kp G                                                       &kp M       &kp N       &kp E           &kp I       &kp O          &kp SQT
-                &mo FN          &kp Z           &kp X       &kp C       &kp D       &kp V       &kp LGUI    &kp RET     &trans       &kp RET     &kp K       &kp H       &kp COMMA       &kp DOT     &kp SLASH      &kp GRAVE
+                &mo FN          &kp Z           &kp X       &kp C       &kp D       &kp V       &kp LGUI    &kp RET     &trans      &kp RET     &kp K       &kp H       &kp COMMA       &kp DOT     &kp SLASH      &kp GRAVE
                                                             &kp RET     &mo SYM     &kp LSHFT   &kp LCTRL   &kp LALT    &kp RALT    &kp BSPC    &kp SPACE   &mo NUM     &kp RET
         >;      
 
@@ -40,10 +40,10 @@
         };  
             sym_layer {
                 bindings = <
-                &none          &none            &none       &none       &none       &none                                                       &kp AMPS    &kp EXCL    &kp UNDER       &kp LBRC        &kp RBRC    &trans
-                &none          &none            &none       &none       &none       &none                                                       &kp PIPE    &kp LPAR    &kp RPAR        &kp LBKT        &kp RBKT    &kp EQUAL
-                &none          &none            &none       &none       &none       &none       &trans       &trans      &trans      &trans     &kp PRCNT   &kp BSLH    &kp HASH        &kp DLLR        &kp TILDE   &kp AT
-                                                            &trans      &trans      &trans      &trans       &trans      &trans      &trans     &trans      &trans      &trans
+                &none           &none           &kp PG_UP   &kp UP      &kp PG_DN   &none                                                       &kp AMPS    &kp EXCL    &kp UNDER       &kp LBRC        &kp RBRC    &trans
+                &none           &kp HOME        &kp LEFT    &kp DOWN    &kp RIGHT   &kp END                                                     &kp PIPE    &kp LPAR    &kp RPAR        &kp LBKT        &kp RBKT    &kp EQUAL
+                &none           &none           &none       &none       &none       &none       &trans       &trans      &trans      &trans     &kp PRCNT   &kp BSLH    &kp HASH        &kp DLLR        &kp TILDE   &kp AT
+                                                            &trans      &none       &trans      &trans       &trans      &trans      &trans     &trans      &trans      &trans
             >;
         };
 
@@ -51,7 +51,7 @@
                 bindings = <
                 &kp K_VOL_UP    &kp C_BRI_UP    &none       &none       &none       &none                                                       &none       &kp F9      &kp F10         &kp F11         &kp F12     &none
                 &kp K_VOL_DN    &kp C_BRI_UP    &none       &none       &none       &none                                                       &none       &kp F5      &kp F6          &kp F7          &kp F8      &none
-                &none           &none           &none       &none       &none       &none      &trans       &trans      &trans      &trans      &none       &kp F1      &kp F2          &kp F3          &kp F4      &none
+                &none           &kp K_MUTE      &none       &none       &none       &none      &trans       &trans      &trans      &trans      &none       &kp F1      &kp F2          &kp F3          &kp F4      &none
                                                             &trans      &trans      &trans     &trans       &trans      &trans      &trans      &trans      &trans      &none
             >;
         };
