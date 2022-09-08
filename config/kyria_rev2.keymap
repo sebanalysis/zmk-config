@@ -26,9 +26,9 @@
                 &mo FN          &kp Z           &kp X       &kp C       &kp D       &kp V       &kp LGUI    &kp RET     &trans      &kp RET     &kp K       &kp H       &kp COMMA       &kp DOT     &kp SLASH      &kp GRAVE
                                                             &kp RET     &mo SYM     &kp LSHFT   &kp LCTRL   &kp LALT    &kp RALT    &kp BSPC    &kp SPACE   &mo NUM     &kp RET
         >;      
-
         sensor-bindings = <&inc_dec_kp A B>;
         };
+
         num_layer {
             bindings = <
                 &none           &none           &kp PG_UP   &kp UP      &kp PG_DN   &none                                                       &kp CARET   &kp N7      &kp N8          &kp N9      &kp MINUS       &kp DEL
@@ -37,24 +37,33 @@
                                                             &trans      &trans      &trans      &trans       &trans      &trans      &trans     &trans      &trans      &trans
             >;
         };  
-            sym_layer {
+
+        sym_layer {
                 bindings = <
-                &none           &none           &kp LBRC    &kp RBRC    &none       &none                                                       &kp CARET   &kp PIPE    &kp DLLR    &kp GRAVE       &kp MINUS      &trans
-                &none           &kp LBKT        &kp RBKT    &kp LPAR    &kp RPAR    &none                                                       &kp PLUS    &kp EXCL    &kp UNDER   &kp TILDE       &kp EQUAL      &kp AT
-                &none           &none           &none       &none       &none       &none       &trans       &trans      &trans      &trans     &kp STAR    &kp HASH    &kp PRCNT   &kp AMPS        &kp BSLH       &trans          
+                &kp GRAVE       &none           &kp LBRC    &kp RBRC    &none       &none                                                       &kp CARET   &kp PIPE    &kp DLLR        &kp GRAVE   &kp MINUS      &trans
+                &none           &kp LBKT        &kp RBKT    &kp LPAR    &kp RPAR    &none                                                       &kp PLUS    &kp EXCL    &kp UNDER       &kp TILDE   &kp EQUAL      &kp AT
+                &none           &none           &none       &none       &none       &none       &trans       &trans      &trans      &trans     &kp STAR    &kp HASH    &kp PRCNT       &kp AMPS    &kp BSLH       &trans          
                                                             &trans      &none       &trans      &trans       &trans      &trans      &trans     &trans      &trans      &trans
             >;
         };
 
-            FN_layer {
-                bindings = <
-                &kp C_VOL_UP    &kp C_BRI_UP    &none       &none       &none       &none                                                       &none       &kp F9      &kp F10         &kp F11         &kp F12     &none
-                &kp C_VOL_DN    &kp C_BRI_DN    &none       &none       &none       &none                                                       &none       &kp F5      &kp F6          &kp F7          &kp F8      &none
-                &none           &kp C_MUTE      &none       &none       &none       &none      &trans       &trans      &trans      &trans      &none       &kp F1      &kp F2          &kp F3          &kp F4      &none
+        FN_layer {
+            bindings = <
+                &kp C_VOL_UP    &kp C_BRI_UP    &none       &none       &none       &none                                                       &none       &kp F9      &kp F10         &kp F11      &kp F12        &none
+                &kp C_VOL_DN    &kp C_BRI_DN    &none       &none       &none       &none                                                       &none       &kp F5      &kp F6          &kp F7       &kp F8         &none
+                &none           &kp C_MUTE      &none       &none       &none       &none      &trans       &trans      &trans      &trans      &none       &kp F1      &kp F2          &kp F3       &kp F4         &none
                                                             &trans      &trans      &trans     &trans       &trans      &trans      &trans      &trans      &trans      &none
             >;
         };
 
+        NAV_layer {
+            bindings = <
+                &none          &none            &none       &none       &none       &none                                                       &none       &none       &none           &none       &none           &none      
+                &none          &none            &none       &none       &none       &none                                                       &kp HOME    &kp LEFT    &kp UP          &kp DOWN    &kp RIGHT       &kp END    
+                &none          &none            &none       &none       &none       &none       &trans       &trans      &trans   &trans        &none        &none       &none           &none       &none           &none            
+                                                            &trans      &trans      &trans      &trans       &trans      &trans   &trans        &trans       &trans      &none    
+            >;
+        }; 
     };
 };
 
@@ -63,6 +72,6 @@
 //               &none          &none            &none       &none       &none       &none                                                   &none          &none           &none       &none       &none       &none    
 //               &none          &none            &none       &none       &none       &none                                                   &none          &none           &none       &none       &none       &none    
 //               &none          &none            &none       &none       &none       &none       &trans       &trans      &trans   &trans    &none          &none           &none       &none       &none       &none    
-//                                                           &trans      &trans      &trans      &trans       &trans      &trans   &trans    &trans          &trans           &none    
+//                                                           &trans      &trans      &trans      &trans       &trans      &trans   &trans    &trans         &trans         &trans    
 //          >;
 //          }; 
