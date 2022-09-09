@@ -45,6 +45,14 @@
                 bindings = <&kp SQT>, <&kp PLUS>;
                 mods = <MOD_LCTL>;
             };
+
+            ctmn: ctrl_minus {
+                compatible = "zmk,behavior-mod-morph";
+                LABEL = "CTRL_MINUS";
+                #binding-cells = <0>;
+                bindings = <&mo FN>, <&kp MINUS>;
+                mods = <MOD_LCTL>;
+            };
         };
 
     keymap {
@@ -53,8 +61,8 @@
         default_layer {
             bindings = <
                 &kp ESC         &kp Q           &kp W       &kp F       &kp P       &kp B                                                       &kp J       &kp L       &kp U           &kp Y       &kp SEMI       &kp DEL
-                &kp TAB         &kp A           &kp R       &kp S       &kp T       &kp G                                                       &kp M       &kp N       &kp E           &kp I       &kp O          &ctrl_plus
-                &mo NAV         &kp Z           &kp X       &kp C       &kp D       &kp V       &kp LGUI    &kp RET     &trans      &kp RET     &kp K       &kp H       &kp COMMA       &kp DOT     &kp SLASH      &mo FN
+                &kp TAB         &kp A           &kp R       &kp S       &kp T       &kp G                                                       &kp M       &kp N       &kp E           &kp I       &kp O          &ctpl
+                &mo NAV         &kp Z           &kp X       &kp C       &kp D       &kp V       &kp LGUI    &kp RET     &trans      &kp RET     &kp K       &kp H       &kp COMMA       &kp DOT     &kp SLASH      &ctmn
                                                             &kp RET     &mo SYM     &kp LSHFT   &kp LCTRL   &kp LALT    &kp RALT    &kp BSPC    &shun      &mo NUM     &kp RET
         >;      
         sensor-bindings = <&inc_dec_kp A B>;
