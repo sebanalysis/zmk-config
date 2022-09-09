@@ -38,21 +38,21 @@
                 mods = <MOD_LSFT>;
             };
 
-            ctpl: ctrl_plus {
-                compatible = "zmk,behavior-mod-morph";
-                LABEL = "CTRL_PLUS";
-                #binding-cells = <0>;
-                bindings = <&kp SQT>, <&kp PLUS>;
-                mods = <MOD_LCTL>;
-            };
+            // ctpl: ctrl_plus {
+            //     compatible = "zmk,behavior-mod-morph";
+            //     LABEL = "CTRL_PLUS";
+            //     #binding-cells = <0>;
+            //     bindings = <&kp SQT>, <&kp PLUS>;
+            //     mods = <MOD_LCTL>;
+            // };
 
-            ctmn: ctrl_minus {
-                compatible = "zmk,behavior-mod-morph";
-                LABEL = "CTRL_MINUS";
-                #binding-cells = <0>;
-                bindings = <&mo FN>, <&kp MINUS>;
-                mods = <MOD_LCTL>;
-            };
+            // ctmn: ctrl_minus {
+            //     compatible = "zmk,behavior-mod-morph";
+            //     LABEL = "CTRL_MINUS";
+            //     #binding-cells = <0>;
+            //     bindings = <&mo FN>, <&kp MINUS>;
+            //     mods = <MOD_LCTL>;
+            // };
         };
 
     keymap {
@@ -61,8 +61,8 @@
         default_layer {
             bindings = <
                 &kp ESC         &kp Q           &kp W       &kp F       &kp P       &kp B                                                       &kp J       &kp L       &kp U           &kp Y       &kp SEMI       &kp DEL
-                &kp TAB         &kp A           &kp R       &kp S       &kp T       &kp G                                                       &kp M       &kp N       &kp E           &kp I       &kp O          &ctpl
-                &mo NAV         &kp Z           &kp X       &kp C       &kp D       &kp V       &kp LGUI    &kp RET     &trans      &kp RET     &kp K       &kp H       &kp COMMA       &kp DOT     &kp SLASH      &ctmn
+                &kp TAB         &kp A           &kp R       &kp S       &kp T       &kp G                                                       &kp M       &kp N       &kp E           &kp I       &kp O          &kp SQT
+                &mo NAV         &kp Z           &kp X       &kp C       &kp D       &kp V       &kp LGUI    &kp RET     &trans      &kp RET     &kp K       &kp H       &kp COMMA       &kp DOT     &kp SLASH      &mo FN
                                                             &kp RET     &mo SYM     &kp LSHFT   &kp LCTRL   &kp LALT    &kp RALT    &kp BSPC    &shun      &mo NUM     &kp RET
         >;      
         sensor-bindings = <&inc_dec_kp A B>;
@@ -70,36 +70,36 @@
 
         num_layer {
             bindings = <
-                &none           &none           &kp PG_UP   &kp UP      &kp PG_DN   &none                                                       &kp CARET   &kp N7      &kp N8          &kp N9      &kp MINUS       &kp DEL
-                &none           &kp HOME        &kp LEFT    &kp DOWN    &kp RIGHT   &kp END                                                     &kp PLUS    &kp N4      &kp N5          &kp N6      &kp N0          &kp DOT
-                &none           &none           &none       &none       &none       &none       &trans       &trans      &trans      &trans     &kp STAR    &kp N1      &kp N2          &kp N3      &kp SLASH       &none
-                                                            &trans      &trans      &trans      &trans       &trans      &trans      &trans     &trans      &trans      &trans
+                &kp GRAVE       &none           &kp LBRC    &kp RBRC    &none       &none                                                    &kp CARET   &kp N7      &kp N8          &kp N9      &kp MINUS       &kp DEL
+                &none           &kp LBKT        &kp RBKT    &kp LPAR    &kp RPAR    &none                                                    &kp PLUS    &kp N4      &kp N5          &kp N6      &kp N0          &kp DOT
+                &none           &none           &none       &none       &none       &none    &trans       &trans      &trans      &trans     &kp STAR    &kp N1      &kp N2          &kp N3      &kp SLASH       &none
+                                                            &trans      &trans      &trans   &trans       &trans      &trans      &trans     &trans      &trans      &trans
             >;
         };  
 
         sym_layer {
                 bindings = <
-                &kp GRAVE       &none           &kp LBRC    &kp RBRC    &none       &none                                                       &kp CARET   &kp PIPE    &kp DLLR        &kp GRAVE   &kp MINUS      &trans
-                &none           &kp LBKT        &kp RBKT    &kp LPAR    &kp RPAR    &none                                                       &kp PLUS    &kp EXCL    &kp UNDER       &kp TILDE   &kp EQUAL      &kp AT
-                &none           &none           &none       &none       &none       &none       &trans       &trans      &trans      &trans     &kp STAR    &kp HASH    &kp PRCNT       &kp AMPS    &kp BSLH       &trans          
-                                                            &trans      &none       &trans      &trans       &trans      &trans      &trans     &trans      &trans      &trans
+                &kp GRAVE       &none       &none       &none       &none       &none                                                      &none        &none          &none         &none       &none          &trans
+                &none           &kp AT      &kp PRCNT   &kp AMPS    &kp DLLR    &none                                                      &none        &kp EXCL       &kp PIPE      &kp TILDE   &kp EQUAL      &none
+                &none           &none       &none       &none       &none       &none        &trans     &trans      &trans      &trans     &none        &kp HASH       &none         &none       &kp BSLH      &none
+                                                        &trans      &none       &trans       &trans     &trans      &trans      &trans     &trans      &trans           &trans
             >;
         };
 
         FN_layer {
             bindings = <
-                &kp C_VOL_UP    &kp C_BRI_UP    &none       &none       &none       &none                                                       &none       &kp F9      &kp F10         &kp F11      &kp F12        &none
-                &kp C_VOL_DN    &kp C_BRI_DN    &none       &none       &none       &none                                                       &none       &kp F5      &kp F6          &kp F7       &kp F8         &none
-                &none           &kp C_MUTE      &none       &none       &none       &none      &trans       &trans      &trans      &trans      &none       &kp F1      &kp F2          &kp F3       &kp F4         &none
-                                                            &trans      &trans      &trans     &trans       &trans      &trans      &trans      &trans      &trans      &none
+                &none       &none    &none       &none       &none       &none                                                       &none       &kp F9      &kp F10         &kp F11      &kp F12        &none
+                &none       &none    &none       &none       &none       &none                                                       &none       &kp F5      &kp F6          &kp F7       &kp F8         &none
+                &none       &none    &none       &none       &none       &none      &trans       &trans      &trans      &trans      &none       &kp F1      &kp F2          &kp F3       &kp F4         &none
+                                                &trans      &trans      &trans       &trans       &trans      &trans      &trans      &trans      &trans      &none
             >;
         };
 
         NAV_layer {
             bindings = <
-                &none          &none            &none       &none       &none       &none                                                       &none       &none       &none           &none       &none           &none      
-                &none          &none            &none       &none       &none       &none                                                       &kp HOME    &kp LEFT    &kp UP          &kp DOWN    &kp RIGHT       &kp END    
-                &none          &none            &none       &none       &none       &none       &trans       &trans      &trans   &trans        &none        &none       &none          &none       &none           &none            
+                &kp C_VOL_UP    &kp C_BRI_UP    &none       &none       &none       &none                                                       &none       &none       &none           &none       &none           &none      
+                &kp C_VOL_DN    &kp C_BRI_DN    &none       &none       &none       &none                                                       &kp HOME    &kp LEFT    &kp UP          &kp DOWN    &kp RIGHT       &kp END    
+                &none           &kp C_MUTE      &none       &none       &none       &none       &trans       &trans      &trans   &trans        &none        &none       &none          &none       &none           &none            
                                                             &trans      &trans      &trans      &trans       &trans      &trans   &trans        &trans       &trans      &none    
             >;
         }; 
