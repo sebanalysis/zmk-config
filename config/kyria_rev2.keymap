@@ -16,6 +16,19 @@
 #define NAV   4
 
 / {
+    // macros {
+    //     zed_em_kay: zed_em_kay {
+    //         label = "ZM_zed_em_kay";
+    //         compatible = "zmk,behavior-macro";
+    //         #binding-cells = <0>;
+    //         bindings
+    //             = <&macro_press &kp LSHFT>
+    //             , <&macro_tap &kp Z &kp M &kp K>
+    //             , <&macro_release &kp LSHFT>
+    //             ;
+    //     };
+    // };
+
     behaviors {
             shun: shift_under {
                 compatible = "zmk,behavior-mod-morph";
@@ -23,6 +36,14 @@
                 #binding-cells = <0>;
                 bindings = <&kp SPACE>, <&kp UNDER>;
                 mods = <MOD_LSFT>;
+            };
+
+            ctpl: ctrl_plus {
+                compatible = "zmk,behavior-mod-morph";
+                LABEL = "CTRL_PLUS";
+                #binding-cells = <0>;
+                bindings = <&kp SQT>, <&kp PLUS>;
+                mods = <MOD_LCTL>;
             };
         };
 
