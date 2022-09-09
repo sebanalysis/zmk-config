@@ -20,7 +20,7 @@
             shun: shift_under {
                 compatible = "zmk,behavior-mod-morph";
                 label = "UNDER_SPACE";
-                //#binding-cells = <0>;
+                #binding-cells = <0>;
                 bindings = <&kp SPACE>, <&kp UNDER>;
                 mods = <MOD_LSFT>;
             };
