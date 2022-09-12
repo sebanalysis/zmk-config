@@ -30,12 +30,12 @@
     // };
 
     behaviors {
-            shun: shift_under {
+            shun: ctrl_under {
                 compatible = "zmk,behavior-mod-morph";
-                label = "UNDER_SPACE";
+                label = "ctrl_under";
                 #binding-cells = <0>;
                 bindings = <&kp SPACE>, <&kp UNDER>;
-                mods = <MOD_LSFT>;
+                mods = <MOD_LCTL>;
             };
 
             // ctpl: ctrl_plus {
@@ -97,7 +97,7 @@
 
         NAV_layer {
             bindings = <
-                &kp C_VOL_UP    &kp C_BRI_UP    &none       &none       &none       &none                                                       &none       &none       &none           &none       &none           &none      
+                &kp C_VOL_UP    &kp C_BRI_UP    &none       &none       &none       &none                                                       &none       &kp PG_UP   &kp PG_DN       &none       &none           &none      
                 &kp C_VOL_DN    &kp C_BRI_DN    &none       &none       &none       &none                                                       &kp HOME    &kp LEFT    &kp UP          &kp DOWN    &kp RIGHT       &kp END    
                 &none           &kp C_MUTE      &none       &none       &none       &none       &trans       &trans      &trans   &trans        &none        &none       &none          &none       &none           &none            
                                                             &trans      &trans      &trans      &trans       &trans      &trans   &trans        &trans       &trans      &none    
