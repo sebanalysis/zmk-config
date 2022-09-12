@@ -35,7 +35,7 @@
                 label = "CTRL_UNDER";
                 #binding-cells = <0>;
                 bindings = <&kp SPACE>, <&kp UNDER>;
-                mods = <MOD_LCTL>;
+                mods = <MOD_LSHFT>;
             };
 
             // ctpl: ctrl_plus {
@@ -70,28 +70,28 @@
 
         num_layer {
             bindings = <
-                &kp GRAVE       &none           &kp LBRC    &kp RBRC    &none       &none                                                    &none       &kp F9      &kp F10         &kp F11      &kp F12        &none
-                &none           &kp LBKT        &kp RBKT    &kp LPAR    &kp RPAR    &none                                                    &none       &kp F5      &kp F6          &kp F7       &kp F8         &none
-                &none           &none           &none       &none       &none       &none    &trans       &trans      &trans      &trans     &none       &kp F1      &kp F2          &kp F3       &kp F4         &none
-                                                            &trans      &trans      &trans   &trans       &trans      &trans      &trans     &trans      &trans      &none                                            
+                &kp GRAVE       &none           &kp LBRC    &kp RBRC    &none       &none                                                    &none        &none          &none         &none       &none         &trans
+                &none           &kp LBKT        &kp RBKT    &kp LPAR    &kp RPAR    &none                                                    &none        &kp EXCL       &kp PIPE      &kp TILDE   &kp EQUAL     &none 
+                &none           &none           &none       &none       &none       &none    &trans       &trans      &trans      &trans     &none        &kp HASH       &none         &none       &kp BSLH      &none 
+                                                            &trans      &trans      &trans   &trans       &trans      &trans      &trans     &trans       &trans         &trans                                        
             >;
         };  
 
         sym_layer {
                 bindings = <
-                &kp GRAVE       &none       &none       &none       &none       &none                                                      &none        &none          &none         &none       &none          &trans
-                &none           &kp AT      &kp PRCNT   &kp AMPS    &kp DLLR    &none                                                      &none        &kp EXCL       &kp PIPE      &kp TILDE   &kp EQUAL      &none
-                &none           &none       &none       &none       &none       &none        &trans     &trans      &trans      &trans     &none        &kp HASH       &none         &none       &kp BSLH      &none
-                                                        &trans      &none       &trans       &trans     &trans      &trans      &trans     &trans      &trans           &trans
+                &kp GRAVE       &none       &none       &none       &none       &none                                                      &kp CARET   &kp N7      &kp N8          &kp N9      &kp MINUS       &kp DEL
+                &none           &kp AT      &kp PRCNT   &kp AMPS    &kp DLLR    &none                                                      &kp PLUS    &kp N4      &kp N5          &kp N6      &kp N0          &kp DOT
+                &none           &none       &none       &none       &none       &none        &trans     &trans      &trans      &trans     &kp STAR    &kp N1      &kp N2          &kp N3      &kp SLASH       &none  
+                                                        &trans      &none       &trans       &trans     &trans      &trans      &trans     &trans      &trans      &trans                                             
             >;
         };
 
         FN_layer {
             bindings = <
-                &none       &none    &none       &none       &none       &none                                                       &kp CARET   &kp N7      &kp N8          &kp N9      &kp MINUS       &kp DEL
-                &none       &none    &none       &none       &none       &none                                                       &kp PLUS    &kp N4      &kp N5          &kp N6      &kp N0          &kp DOT
-                &none       &none    &none       &none       &none       &none      &trans       &trans      &trans      &trans      &kp STAR    &kp N1      &kp N2          &kp N3      &kp SLASH       &none
-                                                &trans      &trans      &trans      &trans       &trans      &trans      &trans      &trans      &trans      &trans
+                &none       &none    &none       &none       &none       &none                                                       &none       &kp F9      &kp F10         &kp F11      &kp F12        &none
+                &none       &none    &none       &none       &none       &none                                                       &none       &kp F5      &kp F6          &kp F7       &kp F8         &none
+                &none       &none    &none       &none       &none       &none      &trans       &trans      &trans      &trans      &none       &kp F1      &kp F2          &kp F3       &kp F4         &none
+                                                &trans      &trans      &trans      &trans       &trans      &trans      &trans      &trans      &trans      &none                                            
             >;
         };
 
