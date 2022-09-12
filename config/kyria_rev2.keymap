@@ -35,7 +35,7 @@
                 label = "CTRL_UNDER";
                 #binding-cells = <0>;
                 bindings = <&kp SPACE>, <&kp UNDER>;
-                mods = <MOD_LSHFT>;
+                mods = <MOD_LSFT>;
             };
 
             // ctpl: ctrl_plus {
