@@ -26,6 +26,9 @@
     //     };
     // };
 
+    &caps_word {
+    continue-list = <UNDERSCORE MINUS>;
+    };
 
     behaviors {
         td_mt: tap_dance_mod_tap {
@@ -33,7 +36,7 @@
             label = "TAP_DANCE_MOD_TAP";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mt LSHIFT LSHIFT>, <&kp CAPSLOCK>;
+            bindings = <&mt LSHIFT &caps_word>, <&kp CAPSLOCK>;
         };
     };
 
