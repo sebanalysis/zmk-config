@@ -29,6 +29,10 @@
     //     };
     // };
 
+// https://zmk.dev/docs/codes/keyboard-keypad
+// https://zmk.dev/docs/behaviors/mod-morph
+// https://github.com/sebanalysis/zmk-config/actions
+
     behaviors {
             shun: ctrl_under {
                 compatible = "zmk,behavior-mod-morph";
@@ -60,10 +64,10 @@
 
         default_layer {
             bindings = <
-                &kp ESC         &kp Q           &kp W       &kp F       &kp P       &kp B                                                       &kp J       &kp L       &kp U           &kp Y       &kp SEMI       &kp DEL
-                &kp TAB         &kp A           &kp R       &kp S       &kp T       &kp G                                                       &kp M       &kp N       &kp E           &kp I       &kp O          &kp SQT
-                &mo NAV         &kp Z           &kp X       &kp C       &kp D       &kp V       &kp LGUI    &kp RET     &trans      &kp RET     &kp K       &kp H       &kp COMMA       &kp DOT     &kp SLASH      &mo FN
-                                                            &kp RET     &mo SYM     &kp LSHFT   &kp LCTRL   &kp LALT    &kp RALT    &kp BSPC    &shun      &mo NUM     &kp RET
+                &kp ESC         &kp Q           &kp W       &kp F       &kp P       &kp B                                                           &kp J       &kp L       &kp U           &kp Y       &kp SEMI       &kp DEL
+                &kp TAB         &kp A           &kp R       &kp S       &kp T       &kp G                                                           &kp M       &kp N       &kp E           &kp I       &kp O          &kp SQT
+                &mo 4         &kp Z           &kp X       &kp C       &kp D       &kp V       &kp LGUI    &kp SPACE   &trans      &kp RET     &kp K       &kp H       &kp COMMA       &kp DOT     &kp SLASH      &mo 3
+                                                            &kp RET     &mo 2     &kp LSHFT   &kp LCTRL   &kp LALT        &kp RALT    &kp BSPC    &shun      &mo 1     &kp RET
         >;      
         sensor-bindings = <&inc_dec_kp A B>;
         };
