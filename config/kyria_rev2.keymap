@@ -3,17 +3,14 @@
  *
  * SPDX-License-Identifier: MIT
  */
+// https://zmk.dev/docs/codes/keyboard-keypad
+// https://zmk.dev/docs/behaviors/mod-morph
+// https://github.com/sebanalysis/zmk-config/actions
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
-
-// #define DEFAULT 0
-// #define NUM   1
-// #define SYM   2
-// #define FN    3
-// #define NAV   4
 
 / {
     // macros {
@@ -29,28 +26,16 @@
     //     };
     // };
 
-// https://zmk.dev/docs/codes/keyboard-keypad
-// https://zmk.dev/docs/behaviors/mod-morph
-// https://github.com/sebanalysis/zmk-config/actions
 
-
-
-            // ctpl: ctrl_plus {
-            //     compatible = "zmk,behavior-mod-morph";
-            //     LABEL = "CTRL_PLUS";
-            //     #binding-cells = <0>;
-            //     bindings = <&kp SQT>, <&kp PLUS>;
-            //     mods = <MOD_LCTL>;
-            // };
-
-            // ctmn: ctrl_minus {
-            //     compatible = "zmk,behavior-mod-morph";
-            //     LABEL = "CTRL_MINUS";
-            //     #binding-cells = <0>;
-            //     bindings = <&mo FN>, <&kp MINUS>;
-            //     mods = <MOD_LCTL>;
-            // };
-        // };
+    behaviors {
+        td_mt: tap_dance_mod_tap {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_MOD_TAP";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mt LSHIFT LSHIFT>, <&kp CAPSLOCK>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
