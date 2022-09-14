@@ -50,7 +50,7 @@
             //     bindings = <&mo FN>, <&kp MINUS>;
             //     mods = <MOD_LCTL>;
             // };
-        };
+        // };
 
     keymap {
         compatible = "zmk,keymap";
