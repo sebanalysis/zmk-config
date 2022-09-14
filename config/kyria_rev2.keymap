@@ -68,7 +68,7 @@
         one {
             bindings = <
                 &kp GRAVE       &none           &kp LBRC    &kp RBRC    &none       &none                                                    &none        &none          &none         &none       &kp UNDER       &trans
-                &none           &kp LBKT        &kp RBKT    &kp LPAR    &kp RPAR    &none                                                    &none        &kp EXCL       &kp PIPE      &kp TILDE   &kp KP_EQUAL    &none 
+                &none           &kp LBKT        &kp RBKT    &kp LPAR    &kp RPAR    &none                                                    &none        &kp EXCL       &kp PIPE      &kp TILDE   &kp EQUAL       &none 
                 &none           &none           &none       &none       &none       &none    &trans       &trans      &trans      &trans     &none        &kp HASH       &none         &none       &kp BSLH        &none 
                                                             &trans      &trans      &trans   &trans       &trans      &trans      &trans     &trans       &trans         &trans                                        
             >;
