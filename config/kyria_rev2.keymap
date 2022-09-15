@@ -83,10 +83,10 @@
 
         four {
             bindings = <
-                &kp C_VOL_UP    &kp C_BRI_UP    &none       &none       &none       &none                                                       &none       &none       &kp PG_UP   &kp PG_DN       &none       &none                
-                &kp C_VOL_DN    &kp C_BRI_DN    &none       &none       &none       &none                                                       &kp HOME    &kp LEFT    &kp UP          &kp DOWN    &kp RIGHT       &kp END    
-                &none           &kp C_MUTE      &none       &none       &none       &none       &trans       &trans      &trans   &trans        &none        &none       &none          &none       &none           &none            
-                                                            &trans      &trans      &trans      &trans       &trans      &trans   &trans        &trans       &trans      &none    
+                &kp C_VOL_UP    &kp C_BRI_UP    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &none                                                       &none       &none       &kp PG_UP   &kp PG_DN       &none       &none                
+                &kp C_VOL_DN    &kp C_BRI_DN    &none         &none         &none           &none                                                       &kp HOME    &kp LEFT    &kp UP          &kp DOWN    &kp RIGHT       &kp END    
+                &none           &kp C_MUTE      &none         &none         &none           &none       &trans       &trans      &trans   &trans        &none        &none       &none          &none       &none           &none            
+                                                              &trans        &trans          &trans      &trans       &trans      &trans   &trans        &trans       &trans      &none    
             >;
         }; 
     };
