@@ -6,6 +6,7 @@
 // https://zmk.dev/docs/codes/keyboard-keypad
 // https://zmk.dev/docs/behaviors/mod-morph
 // https://github.com/sebanalysis/zmk-config/actions
+// https://zmk.dev/docs/behaviors/tap-dance
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -26,9 +27,9 @@
     //     };
     // };
 
-    &caps_word {
-    continue-list = <UNDERSCORE MINUS>;
-    };
+    // &caps_word {
+    // continue-list = <UNDERSCORE MINUS>;
+    // };
 
     behaviors {
         td_mt: tap_dance_mod_tap {
@@ -36,7 +37,7 @@
             label = "TAP_DANCE_MOD_TAP";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mt LSHIFT &caps_word>, <&kp CAPSLOCK>;
+            bindings = <&mt LSHIFT >, <&kp CAPSLOCK>;
         };
     };
 
