@@ -50,8 +50,8 @@
                 &kp TAB         &kp A           &kp R       &kp S       &kp T       &kp G                                                       &kp M       &kp N       &kp E           &kp I       &kp O          &kp SQT
                 &mo 4           &kp Z           &kp X       &kp C       &kp D       &kp V       &kp LGUI    &kp SPACE   &trans      &kp RET     &kp K       &kp H       &kp COMMA       &kp DOT     &kp SLASH      &mo 3
                                                             &kp RET     &mo 2       &td_mt      &kp LCTRL   &kp LALT    &kp RALT    &kp BSPC    &kp SPACE   &mo 1        &kp RET
-        >;      
-        sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            >;      
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         one {
@@ -71,6 +71,7 @@
                 &none           &none       &none       &none       &kp BSLH    &none        &trans     &trans      &trans      &trans     &kp KP_ASTERISK  &kp N1      &kp N2          &kp N3      &kp KP_SLASH       &none  
                                                         &trans      &none       &trans       &trans     &trans      &trans      &trans     &trans           &kp N0      &trans                                             
             >;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         three {
