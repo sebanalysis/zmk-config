@@ -61,6 +61,7 @@
                 &none           &none           &none       &none       &none       &none    &trans       &trans      &trans      &trans     &none        &kp HASH       &none         &none       &kp BSLH        &none 
                                                             &trans      &trans      &trans   &trans       &trans      &trans      &trans     &trans       &trans         &trans                                        
             >;
+            sensor-bindings = <&inc_dec_kp A B>;
         };  
 
         two {
