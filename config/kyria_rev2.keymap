@@ -51,7 +51,7 @@
                 &mo 4           &kp Z           &kp X       &kp C       &kp D       &kp V       &kp LGUI    &kp SPACE   &trans      &kp RET     &kp K       &kp H       &kp COMMA       &kp DOT     &kp SLASH      &mo 3
                                                             &kp RET     &mo 2       &td_mt      &kp LCTRL   &kp LALT    &kp RALT    &kp BSPC    &kp SPACE   &mo 1        &kp RET
             >;      
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp UP DN>;
         };
 
         one {
