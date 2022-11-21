@@ -49,7 +49,7 @@
                 &kp ESC         &kp Q           &kp W       &kp F       &kp P       &kp B                                                       &kp J       &kp L       &kp U           &kp Y       &kp SEMI       &kp DEL
                 &kp TAB         &kp A           &kp R       &kp S       &kp T       &kp G                                                       &kp M       &kp N       &kp E           &kp I       &kp O          &kp SQT
                 &mo 4           &kp Z           &kp X       &kp C       &kp D       &kp V       &kp LGUI    &kp SPACE   &trans      &kp RET     &kp K       &kp H       &kp COMMA       &kp DOT     &kp SLASH      &mo 3
-                                                            &kp RET     &mo 2       &td_mt      &kp LCTRL   &kp LALT    &kp RALT    &kp BSPC    &kp SPACE   &mo 1        &kp RET
+                                                            &kp MINUS   &mo 2       &td_mt      &kp LCTRL   &kp LALT    &kp RALT    &kp BSPC    &kp SPACE   &mo 1       &kp UNDER
             >;      
             sensor-bindings = <&inc_dec_kp UP DOWN>;
         };
@@ -85,10 +85,10 @@
 
         four {
             bindings = <
-                &kp C_VOL_UP   &kp C_BRI_UP   &bt BT_SEL 0  &bt BT_CLR    &none           &none                                                       &none       &none       &kp PG_UP       &kp PG_DN       &none       &none                
-                &kp C_VOL_DN   &kp C_BRI_DN   &bt BT_SEL 1  &out OUT_USB  &none           &none                                                       &kp HOME    &kp LEFT    &kp UP          &kp DOWN    &kp RIGHT       &kp END    
-                &none          &kp C_MUTE     &bt BT_SEL 2  &out OUT_BLE  &none           &none       &trans       &trans      &trans   &trans        &none        &none       &none          &none       &none           &none            
-                                                            &trans        &trans          &trans      &trans       &trans      &trans   &trans        &trans       &trans      &none    
+                &kp C_VOL_UP   &kp C_BRI_UP   &bt BT_SEL 0  &bt BT_CLR    &none           &none                                                       &none       &kp KP_PLUS   &kp PG_UP       &kp PG_DN   &kp KP_MINUS    &none                
+                &kp C_VOL_DN   &kp C_BRI_DN   &bt BT_SEL 1  &out OUT_USB  &none           &none                                                       &kp HOME    &kp LEFT      &kp UP          &kp DOWN    &kp RIGHT       &kp END    
+                &none          &kp C_MUTE     &bt BT_SEL 2  &out OUT_BLE  &none           &none       &trans       &trans      &trans   &trans        &none        &none        &none           &none       &none           &none            
+                                                            &trans        &trans          &trans      &trans       &trans      &trans   &trans        &trans       &trans       &none    
             >; 
         }; 
     };
