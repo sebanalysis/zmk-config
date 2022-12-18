@@ -96,7 +96,7 @@
         five {
             bindings = < 
                 &none          &none            &none       &none       &none       &none                                                   &none          &none           &none       &none       &none       &none    
-                &none          &none            &none       &none       &none       &none                                                   &kp S          &kp LC(X)       &kp LC(Z)   &kp LC(V)   &kp LC(Y)   &none   
+                &none          &none            &none       &none       &none       &none                                                   &kp S          &none           &none       &none       &none       &none   
                 &none          &none            &none       &none       &none       &none       &trans       &trans      &trans   &trans    &none          &none           &none       &none       &none       &none    
                                                             &trans      &trans      &trans      &trans       &trans      &trans   &trans    &trans         &trans         &trans 
         }
