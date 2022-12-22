@@ -42,8 +42,7 @@
         };
     };
 	
-	
-/ {
+
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
@@ -51,7 +50,7 @@
             then-layer = <5>;
 		};
 	};
-};
+	
 
     keymap {
         compatible = "zmk,keymap";
@@ -106,11 +105,15 @@
 
         five {
             bindings = < 
-                &none          &none            &none       &none       &none       &none                                                   &none          &none           &none       &none       &none       &none    
-                &none          &none            &none       &none       &none       &none                                                   &kp S          &kp LC(X)       &kp LC(Z)   &kp LC(V)   &kp LC(Y)   &none   
-                &none          &none            &none       &none       &none       &none       &trans       &trans      &trans   &trans    &none          &none           &none       &none       &none       &none    
-                                                            &trans      &trans      &trans      &trans       &trans      &trans   &trans    &trans         &trans         &trans 
+                &none          &none            &none       &none       &none       &none                                                   &kp S			&none           	&none       	&none       	&none       	&none    
+                &none          &none            &none       &none       &none       &none                                                   &mkp LCLK      	&mmv MOVE_LEFT		&mmv MOVE_UP 	&mmv MOVE_DOWN  &mmv MOVE_RIGHT &mkp RCLK   
+                &none          &none            &none       &none       &none       &none       &trans       &trans      &trans   &trans    &none          	&none           	&none       	&none       	&none       	&none    
+                                                            &trans      &trans      &trans      &trans       &trans      &trans   &trans    &trans         	&trans         	&trans 
 >;
+
+       
+    
+  
 };
 
 
