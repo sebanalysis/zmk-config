@@ -93,7 +93,12 @@
                                                 &trans      &trans      &trans     &trans       &trans      &trans      &trans      &trans      &trans      &none                                            
             >;
         };
+        // 0 is dell work pc
+        // 1 is android phone
+        // 2 is thinkpad home pc
 
+        // to repair : select the layer with BT_SEL #, then BT_CLR, then OUT_BLE
+        // if nothing or right side disconnects, plug and unplug
         four {
             bindings = <
                 &kp C_VOL_UP   &kp C_BRI_UP   &bt BT_SEL 0  &bt BT_CLR    &none         &none                                                       &kp KP_PLUS   &none       &kp PG_UP       &kp PG_DN   &kp KP_MINUS &none                      
