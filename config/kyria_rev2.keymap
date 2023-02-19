@@ -49,6 +49,7 @@
             if-layers = <4 2>;
             then-layer = <5>;
 		};
+        compatible = "zmk,conditional-layers";
         tri_layer_2 {
             if-layers = <2 4>;
             then-layer = <5>;
@@ -63,7 +64,7 @@
             bindings = <
                 &kp ESC         &kp Q           &kp W       &kp F       &kp P       &kp B                                                       &kp J       &kp L       &kp U           &kp Y       &kp SEMI       &kp DEL
                 &kp TAB         &kp A           &kp R       &kp S       &kp T       &kp G                                                       &kp M       &kp N       &kp E           &kp I       &kp O          &kp SQT
-                &mo 4           &kp Z           &kp X       &kp C       &kp D       &kp V       &kp LGUI    &kp SPACE   &trans      &kp RET     &kp K       &kp H       &kp COMMA       &kp DOT     &kp SLASH      &mo 3
+                &mo 4           &kp Z           &kp X       &kp C       &kp D       &kp V       &kp LGUI    &kp SPACE   &kp KP_PLUS &kp RET     &kp K       &kp H       &kp COMMA       &kp DOT     &kp SLASH      &mo 3
                                                             &kp MINUS   &mo 2       &td_mt      &kp LCTRL   &kp LALT    &kp MINUS   &kp BSPC    &kp SPACE   &mo 1       &kp UNDER
             >;      
             sensor-bindings = <&inc_dec_kp UP DOWN>;
@@ -81,8 +82,8 @@
 
         two {
                 bindings = <
-                &kp GRAVE       &none       &none       &none       &none       &none                                                      &kp KP_PLUS      &kp N7      &kp N8          &kp N9      &kp KP_MINUS     &kp DEL
-                &none           &kp AT      &kp PRCNT   &kp AMPS    &kp DLLR    &none                                                      &kp KP_ASTERISK  &kp N4      &kp N5          &kp N6      &kp KP_DOT       &none
+                &kp GRAVE       &none       &none       &none       &none       &none                                                      &kp KP_ASTERISK  &kp N7      &kp N8          &kp N9      &kp KP_MINUS    &kp DEL
+                &none           &kp AT      &kp PRCNT   &kp AMPS    &kp DLLR    &none                                                      &kp KP_PLUS      &kp N4      &kp N5          &kp N6      &kp KP_DOT      &none
                 &none           &none       &none       &none       &kp BSLH    &none        &trans     &trans      &trans      &trans     &kp CARET        &kp N1      &kp N2          &kp N3      &kp KP_SLASH    &none  
                                                         &trans      &none       &trans       &trans     &trans      &trans      &trans     &trans           &kp N0      &trans                                             
             >;
