@@ -40,7 +40,7 @@
             tapping-term-ms = <200>;
             bindings = 
                 <&kp LSHIFT >, <&kp CAPSLOCK>;
-        }
+        };
         td_kp: tap_dance_mod_tap {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_KEYPAD";
