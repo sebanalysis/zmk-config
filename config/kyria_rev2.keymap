@@ -82,9 +82,9 @@
 
         two {
                 bindings = <
-                &kp GRAVE       &none       &none       &none       &none       &none                                                      &kp KP_ASTERISK  &kp N7      &kp N8          &kp N9      &kp KP_MINUS    &kp DEL
+                &kp GRAVE       &none       &none       &none       &none       &none                                                      &kp KP_ASTERISK  &kp N7      &kp N8          &kp N9      &kp KP_MINUS    &trans
                 &none           &kp AT      &kp PRCNT   &kp AMPS    &kp DLLR    &none                                                      &kp KP_PLUS      &kp N4      &kp N5          &kp N6      &kp KP_DOT      &none
-                &none           &none       &none       &none       &kp BSLH    &none        &trans     &trans      &trans      &trans     &kp CARET        &kp N1      &kp N2          &kp N3      &kp KP_SLASH    &none  
+                &trans           &none       &none      &none       &kp BSLH    &none        &trans     &trans      &trans      &trans     &kp CARET        &kp N1      &kp N2          &kp N3      &kp KP_SLASH    &none  
                                                         &trans      &none       &trans       &trans     &trans      &trans      &trans     &trans           &kp N0      &trans                                             
             >;
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
