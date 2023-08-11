@@ -39,7 +39,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = 
-                <&kp LSHIFT >, <&kp CAPSLOCK>;
+                <&kp LSHIFT >, <&kp CAPSLOCK>,
                 <&mo 4 >, <&tog 4>,
                 <&mo 3 >, <&tog 3>,
                 <&mo 2 >, <&tog 2>,
