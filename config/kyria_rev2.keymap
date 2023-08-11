@@ -41,7 +41,7 @@
             bindings = 
                 <&kp LSHIFT >, <&kp CAPSLOCK>;
         };
-        td_kp: tap_dance_mod_tap {
+        td_m2: tap_dance_mod_tap {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_KEYPAD";
             #binding-cells = <0>;
@@ -74,7 +74,7 @@
                 &kp ESC         &kp Q           &kp W           &kp F       &kp P       &kp B                                                                   &kp J           &kp L           &kp U           &kp Y               &kp SEMI       &kp DEL
                 &kp TAB         &kp A           &kp R           &kp S       &kp T       &kp G                                                                   &kp M           &kp N           &kp E           &kp I               &kp O          &kp SQT
                 &mo 4           &kp Z           &kp X           &kp C       &kp D       &kp V   &kp LGUI        &kp SPACE               &kp KP_PLUS &kp RET     &kp K           &kp H           &kp COMMA       &kp DOT             &kp SLASH      &mo 3
-                                                                &kp MINUS   &mo 2       &td_mt  &kp LCTRL       &kp LALT                &kp MINUS   &kp BSPC    &kp SPACE       &mo 1           &kp UNDER   
+                                                                &kp MINUS   &td_m2      &td_mt  &kp LCTRL       &kp LALT                &kp MINUS   &kp BSPC    &kp SPACE       &mo 1           &kp UNDER   
             >;                  
             sensor-bindings = <&inc_dec_kp UP DOWN>;            
         };          
