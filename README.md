@@ -6,4 +6,4 @@ TODO:
 - Turn off the other mini-keys which arent used.
 - get back mouse navigation
 - add the accent symbols into the keyboard
-- 
+- ctrl+shift+v paste plain text
