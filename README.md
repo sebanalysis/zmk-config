@@ -2,12 +2,16 @@ Configuration for my handbuilt mechanical keyboard
 
 TODO: 
 - change numpad . to normal .
-- make the underscore an actual key and move zoom to a special key combo with left pinky
-- Turn off the other mini-keys which arent used.
+- make the underscore to the plus key and move zoom to a special key combo with left pinky
+- Turn off the right and left thumb keys without caps which arent used.
 - get back mouse navigation layer
-- add the accent symbols into the keyboard
+- add the acute and grave accent symbols via alt-e , alt-n, alt-a
 - ctrl+shift+v paste plain text
 - add qwerty layer
-- wire both sides into the same controller and make a new shield
+- add GBP and EUR Symbol
+
+Future: 
+
+- wire the right side into the left controller,  and remove the right side controller. make new shield. test with the Elite C first. 
   - refer to https://docs.splitkb.com/hc/en-us/articles/360010588560-Kyria-schematics
-- 
+
