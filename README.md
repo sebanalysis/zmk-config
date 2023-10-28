@@ -1,8 +1,8 @@
 Configuration for my handbuilt mechanical keyboard
 
 TODO: 
-- change numpad . to normal .
-- make the underscore to the plus key and move zoom to a special key combo with left pinky
+- ~~change numpad . to normal .~~
+- ~~make the underscore to the plus key and move zoom to a special key combo with left pinky~~
 - Turn off the right and left thumb keys without caps which arent used.
 - get back mouse navigation layer
 - add the acute and grave accent symbols via alt-e , alt-n, alt-a
