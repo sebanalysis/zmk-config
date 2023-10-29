@@ -15,22 +15,19 @@
 #include <dt-bindings/zmk/mouse.h>
 
 / {
-    // macros {
-    //     zed_em_kay: zed_em_kay {
-    //         label = "ZM_zed_em_kay";
-    //         compatible = "zmk,behavior-macro";
-    //         #binding-cells = <0>;
-    //         bindings
-    //             = <&macro_press &kp LSHFT>
-    //             , <&macro_tap &kp Z &kp M &kp K>
-    //             , <&macro_release &kp LSHFT>
-    //             ;
-    //     };
-    // };
-
-    // &caps_word {
-    // continue-list = <UNDERSCORE MINUS>;
-    // };
+    macros {
+            zoom_out: zoom_out {
+                label = "macro_zoom_out";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp LCTRL>
+                    , <&macro_tap &kp +>
+                    , <&macro_release &kp LCTRL>
+                    ;
+            };
+        };
+    };
 
     behaviors {
         shift2: tap_dance_mod_tap {
