@@ -16,8 +16,8 @@
 
 #define DEFAULT 0
 #define SYM_1 1
-#define NUM_2 2
-#define FUN_3 3
+#define NUMB_2 2
+#define FUNC_3 3
 #define ARROW_4 4
 #define QWERTY_5 5
 #define MOUSE_6 6
@@ -81,8 +81,8 @@
             bindings = <    
                 &kp ESC               &kp Q           &kp W           &kp F         &kp P       &kp B                                                                   &kp J           &kp L           &kp U           &kp Y               &kp SEMI       &kp DEL 
                 &kp TAB               &kp A           &kp R           &kp S         &kp T       &kp G                                                                   &kp M           &kp N           &kp E           &kp I               &kp O          &kp SQT
-                &mo ARROW_4           &kp Z           &kp X           &kp C         &kp D       &kp V   &kp LGUI        &kp SPACE               &kp KP_PLUS &kp RET     &kp K           &kp H           &kp COMMA       &kp DOT             &kp SLASH      &mo FUN_3
-                                                                    &tog QWERTY_5 &mo NUM_2   &shift2 &kp LCTRL       &kp LALT                &kp MINUS   &kp BSPC    &kp SPACE       &mo SYM_1       &tog MOUSE_6
+                &mo ARROW_4           &kp Z           &kp X           &kp C         &kp D       &kp V   &kp LGUI        &kp SPACE               &kp KP_PLUS &kp RET     &kp K           &kp H           &kp COMMA       &kp DOT             &kp SLASH      &mo FUNC_3
+                                                                    &tog QWERTY_5 &mo NUMB_2   &shift2 &kp LCTRL       &kp LALT                &kp MINUS   &kp BSPC    &kp SPACE       &mo SYM_1       &tog MOUSE_6
             >;            
             sensor-bindings = <&inc_dec_kp UP DOWN>;            
         };          
@@ -121,7 +121,7 @@
                 &kp C_VOL_UP   &kp C_BRI_UP     &none           &none       &none           &none                                                                      &none           &zoom_in               &kp PG_UP       &kp PG_DN       &zoom_out             &none                      
                 &kp C_VOL_DN   &kp C_BRI_DN     &none           &none       &none           &none                                                                      &kp HOME        &kp LEFT               &kp UP          &kp DOWN        &kp RIGHT             &kp END    
                 &none          &kp C_MUTE       &none           &none       &none           &none    &trans      &trans                     &trans      &trans         &none           &none                  &none           &none           &none                 &none            
-                                                                &none       &mo NUM_2       &trans   &trans      &trans                     &trans      &trans         &trans          &trans                 &none    
+                                                                &none       &mo NUMB_2       &trans   &trans      &trans                     &trans      &trans         &trans          &trans                 &none    
             >;      
         };      
 
@@ -133,7 +133,6 @@
                                                   &tog QWERTY_5 &none   &shift2   &kp LCTRL &kp LALT    &kp MINUS  &kp BSPC  &kp SPACE &none     &tog QWERTY_5
             >;
         };
-
 
        
         6_mouse {      
