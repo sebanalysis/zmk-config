@@ -16,18 +16,18 @@
 
 / {
 
-    // macros {
-    //         zoom_out: zoom_out {
-    //             label = "macro_zoom_out";
-    //             compatible = "zmk,behavior-macro";
-    //             #binding-cells = <0>;
-    //             bindings
-    //                 = <&macro_press &kp LCTRL>
-    //                 , <&macro_tap &kp +>
-    //                 , <&macro_release &kp LCTRL>
-    //                 ;
-    //         };
-    //     };
+    macros {
+            zoom_out: zoom_out {
+                label = "macro_zoom_out";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp LCTRL>
+                    , <&macro_tap &kp +>
+                    , <&macro_release &kp LCTRL>
+                    ;
+            };
+        };
 
 
     behaviors {
