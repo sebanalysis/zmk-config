@@ -14,6 +14,8 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/mouse.h>
 
+#define QWERTY 5
+
 / {
 
     macros {
@@ -74,7 +76,7 @@
                 &kp ESC         &kp Q           &kp W           &kp F       &kp P       &kp B                                                                   &kp J           &kp L           &kp U           &kp Y               &kp SEMI       &kp DEL 
                 &kp TAB         &kp A           &kp R           &kp S       &kp T       &kp G                                                                   &kp M           &kp N           &kp E           &kp I               &kp O          &kp SQT
                 &mo 4           &kp Z           &kp X           &kp C       &kp D       &kp V   &kp LGUI        &kp SPACE               &kp KP_PLUS &kp RET     &kp K           &kp H           &kp COMMA       &kp DOT             &kp SLASH      &mo 3
-                                                                &tog 5      &mo 2      &shift2 &kp LCTRL       &kp LALT                 &kp MINUS   &kp BSPC    &kp SPACE       &mo 1           &tog 2
+                                                                &tog QWERTY &mo 2       &shift2 &kp LCTRL       &kp LALT                &kp MINUS   &kp BSPC    &kp SPACE       &mo 1           &none
             >;            
             sensor-bindings = <&inc_dec_kp UP DOWN>;            
         };          
@@ -119,10 +121,10 @@
 
         five {      
             bindings = <            
-                &kp ESC   &kp Q &kp W  &kp E  &kp R &kp T                                   &kp Y      &kp U     &kp I  &kp O     &kp P    &kp BSLH
-                &kp TAB   &kp A &kp S  &kp D  &kp F &kp G                                   &kp H      &kp J     &kp K  &kp L     &kp SEMI &kp SQT
-                &mo 4     &kp Z &kp X  &kp C  &kp V &kp B   &kp LGUI  &kp SPACE &kp KP_PLUS &kp RET    &kp N     &kp M  &kp COMMA &kp DOT  &kp FSLH
-                                    &tog 5 &none &shift2     &kp LCTRL &kp LALT  &kp MINUS   &kp BSPC   &kp SPACE &none  &none
+                &kp ESC   &kp Q &kp W  &kp E  &kp R       &kp T                                   &kp Y      &kp U     &kp I     &kp O     &kp P    &kp BSLH
+                &kp TAB   &kp A &kp S  &kp D  &kp F       &kp G                                   &kp H      &kp J     &kp K     &kp L     &kp SEMI &kp SQT
+                &mo 4     &kp Z &kp X  &kp C  &kp V       &kp B   &kp LGUI  &kp SPACE &kp KP_PLUS &kp RET    &kp N     &kp M     &kp COMMA &kp DOT  &kp FSLH
+                                              &tog QWERTY &none   &shift2   &kp LCTRL &kp LALT    &kp MINUS  &kp BSPC  &kp SPACE &none     &none
             >;
         };
 
