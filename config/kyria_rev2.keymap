@@ -27,7 +27,7 @@
                     ;
             };
         };
-    };
+
 
     behaviors {
         shift2: tap_dance_mod_tap {
@@ -99,7 +99,7 @@
 
         four {          
             bindings = <            
-                &kp C_VOL_UP   &kp C_BRI_UP     &none           &none       &none       &none                                                                      &none           &kp LCTL(EQL)           &kp PG_UP       &kp PG_DN       &kp LCTL(MINS)   &none                      
+                &kp C_VOL_UP   &kp C_BRI_UP     &none           &none       &none       &none                                                                      &none           &kp zoom_out           &kp PG_UP       &kp PG_DN       &kp MINUS             &none                      
                 &kp C_VOL_DN   &kp C_BRI_DN     &none           &none       &none       &none                                                                      &kp HOME        &kp LEFT               &kp UP          &kp DOWN        &kp RIGHT             &kp END    
                 &none          &kp C_MUTE       &none           &none       &none       &none    &trans      &trans                     &trans      &trans         &none           &none                  &none           &none           &none                 &none            
                                                                 &none       &mo 2       &trans   &trans      &trans                     &trans      &trans         &trans          &trans                 &none    
