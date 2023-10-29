@@ -15,11 +15,11 @@
 #include <dt-bindings/zmk/mouse.h>
 
 #define DEFAULT 0
-#define 1_SYM 1
-#define 2_NUM 2
-#define 3_FUNC 3
-#define 4_ARR 4
-#define 5_QWERTY 5
+#define SYM_1 1
+#define NUM_2 2
+#define FUN_3 3
+#define ARR_4 4
+#define QWERTY_5 5
 
 / {
 
@@ -80,8 +80,8 @@
             bindings = <
                 &kp ESC             &kp Q           &kp W           &kp F         &kp P       &kp B                                                                   &kp J           &kp L           &kp U           &kp Y               &kp SEMI       &kp DEL 
                 &kp TAB             &kp A           &kp R           &kp S         &kp T       &kp G                                                                   &kp M           &kp N           &kp E           &kp I               &kp O          &kp SQT
-                &mo 4_ARR           &kp Z           &kp X           &kp C         &kp D       &kp V   &kp LGUI        &kp SPACE               &kp KP_PLUS &kp RET     &kp K           &kp H           &kp COMMA       &kp DOT             &kp SLASH      &mo 3_FUNC
-                                                                    &tog 5_QWERTY &mo 2_NUM   &shift2 &kp LCTRL       &kp LALT                &kp MINUS   &kp BSPC    &kp SPACE       &mo 1_SYM       &none
+                &mo ARR_4           &kp Z           &kp X           &kp C         &kp D       &kp V   &kp LGUI        &kp SPACE               &kp KP_PLUS &kp RET     &kp K           &kp H           &kp COMMA       &kp DOT             &kp SLASH      &mo FUN_3
+                                                                    &tog QWERTY_5 &mo NUM_2   &shift2 &kp LCTRL       &kp LALT                &kp MINUS   &kp BSPC    &kp SPACE       &mo SYM_1       &none
             >;            
             sensor-bindings = <&inc_dec_kp UP DOWN>;            
         };          
@@ -100,7 +100,7 @@
             bindings = <            
                 &kp GRAVE       &none           &none           &none       &none       &none                                                                      &kp CARET        &kp N7             &kp N8          &kp N9          &kp KP_MINUS    &trans
                 &none           &kp AT          &kp PRCNT       &kp AMPS    &kp DLLR    &none                                                                      &kp KP_PLUS      &kp N4             &kp N5          &kp N6          &kp DOT         &none
-                &mo 4_ARR       &none           &none           &none       &kp BSLH    &none   &trans       &trans                     &trans      &trans         &kp KP_ASTERISK  &kp N1             &kp N2          &kp N3          &kp KP_SLASH    &none  
+                &mo ARR_4       &none           &none           &none       &kp BSLH    &none   &trans       &trans                     &trans      &trans         &kp KP_ASTERISK  &kp N1             &kp N2          &kp N3          &kp KP_SLASH    &none  
                                                                 &none       &none       &trans  &trans       &trans                     &trans      &trans         &trans           &kp N0             &none                                                
             >;              
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;              
@@ -120,7 +120,7 @@
                 &kp C_VOL_UP   &kp C_BRI_UP     &none           &none       &none           &none                                                                      &none           &zoom_in               &kp PG_UP       &kp PG_DN       &zoom_out             &none                      
                 &kp C_VOL_DN   &kp C_BRI_DN     &none           &none       &none           &none                                                                      &kp HOME        &kp LEFT               &kp UP          &kp DOWN        &kp RIGHT             &kp END    
                 &none          &kp C_MUTE       &none           &none       &none           &none    &trans      &trans                     &trans      &trans         &none           &none                  &none           &none           &none                 &none            
-                                                                &none       &mo 2_NUM       &trans   &trans      &trans                     &trans      &trans         &trans          &trans                 &none    
+                                                                &none       &mo NUM_2       &trans   &trans      &trans                     &trans      &trans         &trans          &trans                 &none    
             >;      
         };      
 
@@ -128,8 +128,8 @@
             bindings = <            
                 &kp ESC       &kp Q &kp W  &kp E  &kp R         &kp T                                   &kp Y      &kp U     &kp I     &kp O     &kp P    &kp BSLH
                 &kp TAB       &kp A &kp S  &kp D  &kp F         &kp G                                   &kp H      &kp J     &kp K     &kp L     &kp SEMI &kp SQT
-                &mo 4_ARR     &kp Z &kp X  &kp C  &kp V         &kp B   &kp LGUI  &kp SPACE &kp KP_PLUS &kp RET    &kp N     &kp M     &kp COMMA &kp DOT  &kp FSLH
-                                                  &tog 5_QWERTY &none   &shift2   &kp LCTRL &kp LALT    &kp MINUS  &kp BSPC  &kp SPACE &none     &none
+                &mo ARR_4     &kp Z &kp X  &kp C  &kp V         &kp B   &kp LGUI  &kp SPACE &kp KP_PLUS &kp RET    &kp N     &kp M     &kp COMMA &kp DOT  &kp FSLH
+                                                  &tog QWERTY_5 &none   &shift2   &kp LCTRL &kp LALT    &kp MINUS  &kp BSPC  &kp SPACE &none     &none
             >;
         };
 
