@@ -37,7 +37,7 @@
             };
 
             zoom_in: zoom_in {
-                label = "macro_zoom_out";
+                label = "macro_zoom_in";
                 compatible = "zmk,behavior-macro";
                 #binding-cells = <0>;
                 bindings
