@@ -82,7 +82,7 @@
                 &kp UNDER             &kp Q           &kp W           &kp F         &kp P       &kp B                                                                       &kp J           &kp L           &kp U          &kp Y          &kp SEMI       &kp MINUS
                 &kp TAB               &kp A           &kp R           &kp S         &kp T       &kp G                                                                       &kp M           &kp N           &kp E          &kp I          &kp O          &kp SQT
                 &mo ARROW_4           &kp Z           &kp X           &kp C         &kp D       &kp V   &kp LGUI        &kp SPACE               &kp ESC     &kp RET         &kp K           &kp H           &kp COMMA      &kp DOT        &kp SLASH      &mo FUNC_3
-                                                                      &tog MOUSE_6 &mo NUMB_2   &shift2 &kp LCTRL       &kp LALT                &kp MINUS   &kp BSPC        &kp SPACE       &mo SYM_1       &tog QWERTY_5
+                                                                      &tog MOUSE_6 &mo NUMB_2   &shift2 &kp LCTRL       &kp LALT                &kp DEL   &kp BSPC        &kp SPACE       &mo SYM_1       &tog QWERTY_5
             >;            
             sensor-bindings = <&inc_dec_kp UP DOWN>;            
         };          
