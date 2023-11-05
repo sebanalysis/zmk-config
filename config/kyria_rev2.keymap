@@ -79,10 +79,10 @@
 
         default_layer {
             bindings = <    
-                &kp ESC               &kp Q           &kp W           &kp F         &kp P       &kp B                                                                   &kp J           &kp L           &kp U           &kp Y               &kp SEMI       &kp DEL 
-                &kp TAB               &kp A           &kp R           &kp S         &kp T       &kp G                                                                   &kp M           &kp N           &kp E           &kp I               &kp O          &kp SQT
-                &mo ARROW_4           &kp Z           &kp X           &kp C         &kp D       &kp V   &kp LGUI        &kp SPACE               &kp KP_PLUS &kp RET     &kp K           &kp H           &kp COMMA       &kp DOT             &kp SLASH      &mo FUNC_3
-                                                                    &tog MOUSE_6 &mo NUMB_2   &shift2 &kp LCTRL       &kp LALT                &kp MINUS   &kp BSPC    &kp SPACE       &mo SYM_1       &tog QWERTY_5
+                &kp UNDER             &kp Q           &kp W           &kp F         &kp P       &kp B                                                                       &kp J           &kp L           &kp U          &kp Y          &kp SEMI       &kp MINUS
+                &kp TAB               &kp A           &kp R           &kp S         &kp T       &kp G                                                                       &kp M           &kp N           &kp E          &kp I          &kp O          &kp SQT
+                &mo ARROW_4           &kp Z           &kp X           &kp C         &kp D       &kp V   &kp LGUI        &kp SPACE               &kp ESC     &kp RET         &kp K           &kp H           &kp COMMA      &kp DOT        &kp SLASH      &mo FUNC_3
+                                                                      &tog MOUSE_6 &mo NUMB_2   &shift2 &kp LCTRL       &kp LALT                &kp MINUS   &kp BSPC        &kp SPACE       &mo SYM_1       &tog QWERTY_5
             >;            
             sensor-bindings = <&inc_dec_kp UP DOWN>;            
         };          
@@ -118,8 +118,8 @@
 
         4_arr {          
             bindings = <            
-                &kp C_VOL_UP   &kp C_BRI_UP     &none           &none       &none           &none                                                                      &none           &zoom_in               &kp PG_UP       &kp PG_DN       &zoom_out             &none                      
-                &kp C_VOL_DN   &kp C_BRI_DN     &none           &none       &none           &none                                                                      &kp HOME        &kp LEFT               &kp UP          &kp DOWN        &kp RIGHT             &kp END    
+                &kp C_VOL_UP   &kp C_BRI_UP     &zoom_in        &none       &none           &none                                                                      &none           &zoom_in               &kp PG_UP       &kp PG_DN       &zoom_out             &none                      
+                &kp C_VOL_DN   &kp C_BRI_DN     &zoom_out       &none       &none           &none                                                                      &kp HOME        &kp LEFT               &kp UP          &kp DOWN        &kp RIGHT             &kp END    
                 &none          &kp C_MUTE       &none           &none       &none           &none    &trans      &trans                     &trans      &trans         &none           &none                  &none           &none           &none                 &none            
                                                                 &none       &mo NUMB_2       &trans   &trans      &trans                     &trans      &trans         &trans          &trans                 &none    
             >;      
@@ -140,7 +140,7 @@
                 &none          &none            &none           &none       &none       &none                                                                       &kp S	       &none                &kp PG_UP       &kp PG_DN       &none       	    &none    
                 &none          &none            &none           &none       &none       &none                                                                       &mkp LCLK      &mmv MOVE_LEFT       &mmv MOVE_UP    &mmv MOVE_DOWN  &mmv MOVE_RIGHT &mkp RCLK   
                 &none          &none            &none           &none       &none       &none    &trans       &trans                    &trans     &trans           &none          &none                &none       	&none       	&none       	&none    
-                                                                &none       &trans      &trans   &trans       &trans                    &trans     &trans           &trans         &trans               &tog MOUSE_6
+                                                                &tog MOUSE_6  &trans      &trans   &trans       &trans                    &trans     &trans           &trans         &trans               &tog MOUSE_6
             
                 >;
         };
@@ -149,7 +149,6 @@
 
     };
 };
-
 
 
 //          _layer {
