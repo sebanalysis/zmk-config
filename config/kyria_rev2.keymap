@@ -19,8 +19,8 @@
 #define NUMB_2 2
 #define FUNC_3 3
 #define ARROW_4 4
-#define QWERTY_5 5
-#define MOUSE_6 6
+#define QWERTY 5
+#define MOUSE 6
 
 / {
 
