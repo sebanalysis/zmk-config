@@ -126,12 +126,12 @@
         };      
 
         5_qwerty {      
-            bindings = <            
-                &kp ESC       &kp Q &kp W  &kp E  &kp R         &kp T                                   &kp Y      &kp U     &kp I     &kp O     &kp P    &kp BSLH
-                &kp TAB       &kp A &kp S  &kp D  &kp F         &kp G                                   &kp H      &kp J     &kp K     &kp L     &kp SEMI &kp SQT
-                &mo ARROW_4     &kp Z &kp X  &kp C  &kp V         &kp B   &kp LGUI  &kp SPACE &kp KP_PLUS &kp RET    &kp N     &kp M     &kp COMMA &kp DOT  &kp FSLH
-                                                  &tog QWERTY_5 &none   &shift2   &kp LCTRL &kp LALT    &kp MINUS  &kp BSPC  &kp SPACE &none     &tog QWERTY_5
-            >;
+            bindings = <    
+                &kp Q             &kp Q           &kp W           &kp F         &kp P       &kp B                                                                       &kp J           &kp L           &kp U          &kp Y          &kp SEMI       &kp DEL
+                &kp TAB               &kp A           &kp R           &kp S         &kp T       &kp G                                                                       &kp M           &kp N           &kp E          &kp I          &kp O          &kp SQT
+                &mo ARROW_4           &kp Z           &kp X           &kp C         &kp D       &kp V   &kp LGUI        &kp SPACE               &kp C_AC_BACK    &kp RET         &kp K           &kp H           &kp COMMA      &kp DOT        &kp SLASH      &mo FUNC_3
+                                                                      &tog MOUSE_6 &mo NUMB_2   &shift2 &kp LCTRL       &kp LALT                &kp MINUS   &kp BSPC        &kp SPACE       &mo SYM_1       &tog QWERTY_5
+            >;  
         };
 
        
@@ -159,3 +159,10 @@
 //                                                           &trans      &trans      &trans      &trans       &trans                     &trans   &trans    &trans         &trans         &trans    
 //          >;
 //          }; 
+
+            // bindings = <            
+            //     &kp ESC       &kp Q &kp W  &kp E  &kp R         &kp T                                   &kp Y      &kp U     &kp I     &kp O     &kp P    &kp BSLH
+            //     &kp TAB       &kp A &kp S  &kp D  &kp F         &kp G                                   &kp H      &kp J     &kp K     &kp L     &kp SEMI &kp SQT
+            //     &mo ARROW_4     &kp Z &kp X  &kp C  &kp V         &kp B   &kp LGUI  &kp SPACE &kp KP_PLUS &kp RET    &kp N     &kp M     &kp COMMA &kp DOT  &kp FSLH
+            //                                       &tog QWERTY_5 &none   &shift2   &kp LCTRL &kp LALT    &kp MINUS  &kp BSPC  &kp SPACE &none     &tog QWERTY_5
+            // >;
