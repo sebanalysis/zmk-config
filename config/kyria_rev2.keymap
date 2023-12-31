@@ -79,10 +79,10 @@
 
         default_layer {
             bindings = <    
-                &kp ESC             &kp Q           &kp W           &kp F         &kp P       &kp B                                                                       &kp J           &kp L           &kp U          &kp Y          &kp SEMI       &kp DEL
-                &kp TAB               &kp A           &kp R           &kp S         &kp T       &kp G                                                                       &kp M           &kp N           &kp E          &kp I          &kp O          &kp SQT
-                &mo ARROW_4           &kp Z           &kp X           &kp C         &kp D       &kp V   &kp LGUI        &kp SPACE               &kp C_AC_BACK    &kp RET         &kp K           &kp H           &kp COMMA      &kp DOT        &kp SLASH      &mo FUNC_3
-                                                                      &tog QWE_6 &mo NUMB_2   &shift2 &kp LCTRL       &kp LALT                &kp MINUS   &kp BSPC        &kp SPACE       &mo SYM_1       &tog MAUS_5
+                &kp ESC             &kp Q           &kp W           &kp F      &kp P       &kp B                                                                       &kp J           &kp L           &kp U          &kp Y          &kp SEMI       &kp DEL
+                &kp TAB             &kp A           &kp R           &kp S      &kp T       &kp G                                                                       &kp M           &kp N           &kp E          &kp I          &kp O          &kp SQT
+                &mo ARROW_4         &kp Z           &kp X           &kp C      &kp D       &kp V   &kp LGUI        &kp SPACE               &kp C_AC_BACK    &kp RET    &kp K           &kp H           &kp COMMA      &kp DOT        &kp SLASH      &mo FUNC_3
+                                                                    &tog QWE_6 &mo NUMB_2  &shift2 &kp LCTRL       &kp LALT                &kp MINUS        &kp BSPC   &kp SPACE       &mo SYM_1       &tog MAUS_5
             >;            
             sensor-bindings = <&inc_dec_kp UP DOWN>;            
         };          
@@ -91,8 +91,8 @@
             bindings = <            
                 &kp GRAVE       &none           &kp LBRC        &kp RBRC    &none       &none                                                                     &none          &none               &none           &none           &kp KP_MINUS    &trans
                 &none           &kp LBKT        &kp RBKT        &kp LPAR    &kp RPAR    &none                                                                     &none          &kp EXCL            &kp PIPE        &kp TILDE       &kp EQUAL       &none
-                &none           &none           &none           &none       &none       &none    &trans       &trans                    &trans      &trans        &none          &kp HASH            &none           &none           &kp BSLH        &none 
-                                                                &none       &trans      &trans   &trans       &trans                    &trans      &trans        &trans         &to 2               &none                                            
+                &trans          &none           &none           &none       &none       &none    &trans       &trans                    &trans      &trans        &none          &kp HASH            &none           &none           &kp BSLH        &trans
+                                                                &trans       &trans      &trans   &trans      &trans                    &trans      &trans        &trans        &trans              &trans                                           
             >;              
             sensor-bindings = <&inc_dec_kp A B>;                
         };                  
@@ -101,8 +101,8 @@
             bindings = <            
                 &kp GRAVE         &none           &none           &none       &none       &none                                                                      &kp CARET        &kp N7             &kp N8          &kp N9          &kp KP_MINUS    &trans
                 &none             &kp AT          &kp PRCNT       &kp AMPS    &kp DLLR    &none                                                                      &kp KP_PLUS      &kp N4             &kp N5          &kp N6          &kp DOT         &none
-                &mo ARROW_4       &none           &none           &none       &kp BSLH    &none   &trans       &trans                     &trans      &trans         &kp KP_ASTERISK  &kp N1             &kp N2          &kp N3          &kp KP_SLASH    &none  
-                                                                &none       &none       &trans  &trans       &trans                     &trans      &trans         &trans           &kp N0             &none                                                
+                &trans            &none           &none           &none       &kp BSLH    &none   &trans       &trans                     &trans      &trans         &kp KP_ASTERISK  &kp N1             &kp N2          &kp N3          &kp KP_SLASH    &trans  
+                                                                  &trans      &trans      &trans  &trans       &trans                     &trans      &trans         &trans           &kp N0             &trans                                               
             
             >;              
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;              
@@ -112,8 +112,8 @@
             bindings = <                
                 &kp F1          &kp F2          &kp F3          &kp F4      &kp F5      &kp F6                                                                     &kp F7          &kp F8              &kp F9          &kp F10         &kp F11         &kp F12
                 &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &none       &none       &none                                                                      &none           &none               &none           &none           &none           &none
-                &bt BT_CLR      &out OUT_BLE    &none           &none       &none       &none   &trans       &trans                     &trans      &trans         &none           &none               &none           &none           &none           &none
-                                                                &none       &trans      &trans  &trans       &trans                     &trans      &trans         &trans          &trans              &none                                                
+                &trans          &bt BT_CLR      &none           &none       &none       &none   &trans       &trans                     &trans      &trans         &none           &none               &none           &none           &none           &trans
+                                                                &trans      &trans      &trans  &trans       &trans                     &trans      &trans         &trans          &trans              &trans                                              
             >;          
         };          
 
@@ -121,8 +121,8 @@
             bindings = <            
                 &kp C_VOL_UP   &kp C_BRI_UP     &zoom_in        &none       &none           &none                                                                      &none           &zoom_in               &kp PG_UP       &kp PG_DN       &zoom_out             &none                      
                 &kp C_VOL_DN   &kp C_BRI_DN     &zoom_out       &none       &none           &none                                                                      &kp HOME        &kp LEFT               &kp UP          &kp DOWN        &kp RIGHT             &kp END    
-                &none          &kp C_MUTE       &none           &none       &none           &none    &trans      &trans                     &trans      &trans         &none           &none                  &none           &none           &none                 &none            
-                                                                &none       &mo NUMB_2       &trans   &trans      &trans                     &trans      &trans         &trans          &trans                 &none    
+                &trans         &kp C_MUTE       &none           &none       &none           &none    &trans      &trans                     &trans      &trans         &none           &none                  &none           &none           &none                  &trans           
+                                                                &trans      &trans         &trans   &trans      &trans                     &trans      &trans         &trans          &trans                 &trans    
             >;      
         };
 
@@ -130,19 +130,19 @@
             bindings = <
                 &none          &none            &none           &none       &none       &none                                                                       &kp S	       &none                &kp PG_UP       &kp PG_DN       &none       	    &none    
                 &none          &none            &none           &none       &none       &none                                                                       &mkp LCLK      &mmv MOVE_LEFT       &mmv MOVE_UP    &mmv MOVE_DOWN  &mmv MOVE_RIGHT &mkp RCLK   
-                &none          &none            &none           &none       &none       &none    &trans       &trans                    &trans     &trans           &none          &none                &none       	&none       	&none       	&none    
-                                                                &tog QWE_6  &trans      &trans   &trans       &trans                    &trans     &trans           &trans         &trans             &tog MAUS_5
+                &trans          &none            &none          &none       &none       &none    &trans       &trans                    &trans     &trans           &none          &none                &none       	&none       	&none       	 &trans   
+                                                                &trans      &trans      &trans   &trans       &trans                    &trans     &trans           &trans         &trans             &trans
             
                 >;
         };      
 
         6_qwerty {      
-            bindings = <    
-                &none          &none            &none           &none       &none       &none                                                                       &kp S	       &none                &kp PG_UP       &kp PG_DN       &none       	    &none    
-                &none          &none            &none           &none       &none       &none                                                                       &mkp LCLK      &mmv MOVE_LEFT       &mmv MOVE_UP    &mmv MOVE_DOWN  &mmv MOVE_RIGHT &mkp RCLK   
-                &none          &none            &none           &none       &none       &none    &trans       &trans                    &trans     &trans           &none          &none                &none       	&none       	&none       	&none    
-                                                                &tog QWE_6  &trans      &trans   &trans       &trans                    &trans     &trans           &trans         &trans             &tog MAUS_5
-            >;  
+            bindings = <                                 
+                &kp ESC       &kp Q &kp W  &kp E  &kp R   &kp T                                                    &kp Y     &kp U     &kp I     &kp O     &kp P       &kp BSLH
+                &kp TAB       &kp A &kp S  &kp D  &kp F   &kp G                                                    &kp H     &kp J     &kp K     &kp L     &kp SEMI    &kp SQT
+                &trans        &kp Z &kp X  &kp C  &kp V   &kp B   &kp LGUI  &kp SPACE       &kp KP_PLUS &kp RET    &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH    &trans
+                                           &trans &trans  &shift2 &kp LCTRL &kp LALT        &kp MINUS   &kp BSPC   &kp SPACE &trans    &trans
+            >; 
         };
 
     };
@@ -162,5 +162,5 @@
             //     &kp ESC       &kp Q &kp W  &kp E  &kp R         &kp T                                   &kp Y      &kp U     &kp I     &kp O     &kp P    &kp BSLH
             //     &kp TAB       &kp A &kp S  &kp D  &kp F         &kp G                                   &kp H      &kp J     &kp K     &kp L     &kp SEMI &kp SQT
             //     &mo ARROW_4     &kp Z &kp X  &kp C  &kp V         &kp B   &kp LGUI  &kp SPACE &kp KP_PLUS &kp RET    &kp N     &kp M     &kp COMMA &kp DOT  &kp FSLH
-            //                                       &tog QWE_6 &none   &shift2   &kp LCTRL &kp LALT    &kp MINUS  &kp BSPC  &kp SPACE &none     &tog QWE_6
+            //                                       &trans &none   &shift2   &kp LCTRL &kp LALT    &kp MINUS  &kp BSPC  &kp SPACE &none     &trans
             // >;
