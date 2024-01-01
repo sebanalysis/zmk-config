@@ -19,8 +19,8 @@
 #define NUMB 2
 #define FUNC 3
 #define ARROW 4
-#define MAUS 5
-#define QWE 6
+#define QWE 5
+#define MAUS 6
 
 / {
 
@@ -126,6 +126,16 @@
                                                                 &trans      &trans         &trans   &trans      &trans                     &trans      &trans         &trans          &trans                 &trans    
             >;      
         };  
+       
+
+        qwerty {      
+            bindings = <                                 
+                &trans       &trans &trans &kp E  &kp R   &kp T                                                  &kp Y     &kp U     &kp I     &kp O     &kp P       &trans
+                &trans       &trans &kp S  &kp D  &kp F   &trans                                                 &kp H     &kp J     &kp K     &kp L     &kp SEMI    &trans
+                &trans       &trans &trans &trans &kp V   &kp B   &kp LGUI  &kp SPACE       &kp KP_PLUS &kp RET  &kp N     &kp M     &trans    &trans    &trans      &trans
+                                           &trans &trans  &shift2 &kp LCTRL &kp LALT        &kp MINUS   &kp BSPC &kp SPACE &trans    &trans
+            >; 
+        };
 
         mouse {      
             bindings = <
@@ -135,20 +145,7 @@
                                                                 &trans      &trans      &trans   &trans       &trans                    &trans     &trans           &trans         &trans               &trans
             
                 >;
-        };          
-
-        qwerty {      
-            bindings = <                                 
-                &trans       &trans &trans &kp E  &kp R   &kp T                                                  &kp Y     &kp U     &kp I     &kp O     &kp P       &trans
-                &trans       &trans &kp S  &kp D  &kp F   &trans                                                 &kp H     &kp J     &kp K     &kp L     &kp SEMI    &trans
-                &trans       &trans &trans &trans &kp V   &kp B   &kp LGUI  &kp SPACE       &kp KP_PLUS &kp RET  &kp N     &kp M     &trans    &trans    &trans      &trans
-                                           &trans &trans  &shift2 &kp LCTRL &kp LALT        &kp MINUS   &kp BSPC &kp SPACE &trans    &trans
-            >; 
-
-
-
-
-        };
+        };   
 
     };
 };
