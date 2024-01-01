@@ -18,8 +18,8 @@
 #define SYM 1
 #define NUMB 2
 #define FUNC 3
-#define MAUS 4
-#define ARROW 5
+#define ARROW 4
+#define MAUS 5
 #define QWE 6
 
 / {
@@ -115,7 +115,17 @@
                 &trans          &bt BT_CLR      &none           &none       &none       &none   &trans       &trans                     &trans      &trans         &none           &none               &none           &none           &none           &trans
                                                                 &trans      &trans      &trans  &trans       &trans                     &trans      &trans         &trans          &trans              &trans                                              
             >;          
-        };      
+        };    
+
+        
+        arr {          
+            bindings = <            
+                &kp C_VOL_UP   &kp C_BRI_UP     &zoom_in        &none       &none          &none                                                                      &none           &zoom_in               &kp PG_UP       &kp PG_DN       &zoom_out             &none                      
+                &kp C_VOL_DN   &kp C_BRI_DN     &zoom_out       &none       &none          &none                                                                      &kp HOME        &kp LEFT               &kp UP          &kp DOWN        &kp RIGHT             &kp END    
+                &trans         &kp C_MUTE       &none           &none       &none          &none    &trans      &trans                     &trans      &trans         &none           &none                  &none           &none           &none                  &trans           
+                                                                &trans      &trans         &trans   &trans      &trans                     &trans      &trans         &trans          &trans                 &trans    
+            >;      
+        };  
 
         mouse {      
             bindings = <
@@ -126,15 +136,6 @@
             
                 >;
         };          
-
-        arr {          
-            bindings = <            
-                &kp C_VOL_UP   &kp C_BRI_UP     &zoom_in        &none       &none          &none                                                                      &none           &zoom_in               &kp PG_UP       &kp PG_DN       &zoom_out             &none                      
-                &kp C_VOL_DN   &kp C_BRI_DN     &zoom_out       &none       &none          &none                                                                      &kp HOME        &kp LEFT               &kp UP          &kp DOWN        &kp RIGHT             &kp END    
-                &trans         &kp C_MUTE       &none           &none       &none          &none    &trans      &trans                     &trans      &trans         &none           &none                  &none           &none           &none                  &trans           
-                                                                &trans      &trans         &trans   &trans      &trans                     &trans      &trans         &trans          &trans                 &trans    
-            >;      
-        };
 
         qwerty {      
             bindings = <                                 
