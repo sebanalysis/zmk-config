@@ -129,6 +129,8 @@
             >;      
         };  
 
+// For some reason, I cannot access this layer. Must be a bug!
+
         dummy_layer {
               bindings = <
               &none          &none            &none       &none       &none       &none                                                                  &none          &none           &none       &none       &none       &none    
