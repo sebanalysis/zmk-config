@@ -83,8 +83,8 @@
             bindings = <    
                 &kp ESC             &kp Q           &kp W           &kp F      &kp P       &kp B                                                                       &kp J           &kp L          &kp U          &kp Y          &kp SEMI       &kp DEL
                 &kp TAB             &kp A           &kp R           &kp S      &kp T       &kp G                                                                       &kp M           &kp N          &kp E          &kp I          &kp O          &kp SQT
-                &mo ARROW           &kp Z           &kp X           &kp C      &kp D       &kp V   &kp LGUI        &kp SPACE               &kp PLUS         &kp RET    &kp K           &kp H          &kp COMMA      &kp DOT        &kp SLASH      &mo FUNC
-                                                                    &kp PSCRN  &mo NUMB    &shift2 &kp LCTRL       &kp LSHIFT              &kp MINUS        &kp BSPC   &kp SPACE       &mo SYM        &mo MAUS
+                &mo ARROW           &kp Z           &kp X           &kp C      &kp D       &kp V   &kp LGUI        &kp LSHIFT              &kp PLUS         &kp RET    &kp K           &kp H          &kp COMMA      &kp DOT        &kp SLASH      &mo FUNC
+                                                                    &kp PSCRN  &mo NUMB    &shift2 &kp LCTRL       &kp LALT                &kp MINUS        &kp BSPC   &kp SPACE       &mo SYM        &mo MAUS
             >;            
             sensor-bindings = <&inc_dec_kp UP DOWN>;            
         };          
@@ -94,7 +94,7 @@
                 &kp GRAVE       &none           &kp LBRC        &kp RBRC    &none       &none                                                                     &none          &none               &none           &none           &kp KP_MINUS    &trans
                 &none           &kp LBKT        &kp RBKT        &kp LPAR    &kp RPAR    &none                                                                     &none          &kp EXCL            &kp PIPE        &kp TILDE       &kp EQUAL       &none
                 &trans          &none           &none           &none       &none       &none    &trans       &trans                    &trans      &trans        &none          &kp HASH            &none           &none           &kp BSLH        &trans
-                                                                &trans      &trans      &trans   &trans      &trans                     &trans      &trans        &trans         &trans              &trans                                           
+                                                                &trans      &trans      &trans   &trans       &trans                     &trans      &trans        &trans         &trans              &trans                                           
             >;              
             sensor-bindings = <&inc_dec_kp A B>;                
         };                  
