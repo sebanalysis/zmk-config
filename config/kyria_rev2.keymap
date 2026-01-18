@@ -69,17 +69,15 @@
 	    bindings = <&kp LSHIFT>, <&kp CAPSLOCK>;
 	  };
 	
-	  /* Mouse scroll: remove ramp-up delay (instant scroll) */
-	  &msc {
-	    time-to-max-speed-ms = <0>;
-	    acceleration-exponent = <0>;
-	  };
-	
 	};
 
+	/* Mouse scroll: remove ramp-up delay (instant scroll) */
+	&msc {
+	    time-to-max-speed-ms = <0>;
+	    acceleration-exponent = <0>;
+	};
 	
-	
-    conditional_layers {
+	conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
             if-layers = <4 2>;
