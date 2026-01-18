@@ -83,7 +83,7 @@
             bindings = <    
                 &kp ESC             &kp Q           &kp W           &kp F      &kp P       &kp B                                                                       &kp J           &kp L          &kp U          &kp Y          &kp SEMI       &kp DEL
                 &kp TAB             &kp A           &kp R           &kp S      &kp T       &kp G                                                                       &kp M           &kp N          &kp E          &kp I          &kp O          &kp SQT
-                &mo ARROW           &kp Z           &kp X           &kp C      &kp D       &kp V   &kp LGUI        &kp SPACE               &kp C_AC_BACK    &kp RET    &kp K           &kp H          &kp COMMA      &kp DOT        &kp SLASH      &mo FUNC
+                &mo ARROW           &kp Z           &kp X           &kp C      &kp D       &kp V   &kp LGUI        &kp SPACE               &kp PLUS         &kp RET    &kp K           &kp H          &kp COMMA      &kp DOT        &kp SLASH      &mo FUNC
                                                                     &kp PSCRN  &mo NUMB    &shift2 &kp LCTRL       &kp LSHIFT              &kp MINUS        &kp BSPC   &kp SPACE       &mo SYM        &mo MAUS
             >;            
             sensor-bindings = <&inc_dec_kp UP DOWN>;            
