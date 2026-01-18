@@ -78,16 +78,11 @@
 	};
 
 	
-
+	
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
             if-layers = <4 2>;
-            then-layer = <5>;
-		};
-        compatible = "zmk,conditional-layers";
-        tri_layer_2 {
-            if-layers = <2 4>;
             then-layer = <5>;
 		};
 	};
@@ -145,7 +140,7 @@
             >;      
         };  
 
-// For some reason, I cannot access this dummy_layer. Must be a bug!
+//  cannot access this "dummy_layer" probably because it is the conditional combined layer of 2 and 4 specified earlier
 
         dummy_layer {
               bindings = <
