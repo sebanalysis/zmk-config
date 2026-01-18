@@ -31,31 +31,42 @@
 #define MAUS 6
 
 
+	
+
+
 / {
+	
+	conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <4 2>;
+            then-layer = <5>;
+		};
+	};
 
     macros {
-            zoom_out: zoom_out {
-                label = "macro_zoom_out";
-                compatible = "zmk,behavior-macro";
-                #binding-cells = <0>;
-                bindings
-                    = <&macro_press &kp LCTRL>
-                    , <&macro_tap &kp KP_MINUS>
-                    , <&macro_release &kp LCTRL>
-                    ;
-            };
+		zoom_out: zoom_out {
+			label = "macro_zoom_out";
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings
+				= <&macro_press &kp LCTRL>
+				, <&macro_tap &kp KP_MINUS>
+				, <&macro_release &kp LCTRL>
+				;
+		};
 
-            zoom_in: zoom_in {
-                label = "macro_zoom_in";
-                compatible = "zmk,behavior-macro";
-                #binding-cells = <0>;
-                bindings
-                    = <&macro_press &kp LCTRL>
-                    , <&macro_tap &kp KP_PLUS>
-                    , <&macro_release &kp LCTRL>
-                    ;
-            };
-        };
+		zoom_in: zoom_in {
+			label = "macro_zoom_in";
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings
+				= <&macro_press &kp LCTRL>
+				, <&macro_tap &kp KP_PLUS>
+				, <&macro_release &kp LCTRL>
+				;
+		};
+	};
 
 
 	behaviors {
@@ -71,19 +82,7 @@
 	
 	};
 
-	/* Mouse scroll: remove ramp-up delay (instant scroll) */
-	&msc {
-	    time-to-max-speed-ms = <0>;
-	    acceleration-exponent = <0>;
-	};
-	
-	conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <4 2>;
-            then-layer = <5>;
-		};
-	};
+
 
     keymap {
         compatible = "zmk,keymap";
@@ -163,19 +162,11 @@
     };
 };
 
+/* Mouse scroll: remove ramp-up delay (instant scroll) */
+	&msc {
+	    time-to-max-speed-ms = <0>;
+	    acceleration-exponent = <0>;
+	};
 
-//          _layer {
-//               bindings = <
-//               &none          &none            &none       &none       &none       &none                                                                  &none          &none           &none       &none       &none       &none    
-//               &none          &none            &none       &none       &none       &none                                                                  &none          &none           &none       &none       &none       &none    
-//               &none          &none            &none       &none       &none       &none       &trans       &trans                     &trans   &trans    &none          &none           &none       &none       &none       &none    
-//                                                           &trans      &trans      &trans      &trans       &trans                     &trans   &trans    &trans         &trans         &trans    
-//          >;
-//          }; 
 
-            // bindings = <            
-            //     &kp ESC       &kp Q &kp W  &kp E  &kp R         &kp T                                   &kp Y      &kp U     &kp I     &kp O     &kp P    &kp BSLH
-            //     &kp TAB       &kp A &kp S  &kp D  &kp F         &kp G                                   &kp H      &kp J     &kp K     &kp L     &kp SEMI &kp SQT
-            //     &mo ARROW     &kp Z &kp X  &kp C  &kp V         &kp B   &kp LGUI  &kp SPACE &kp KP_PLUS &kp RET    &kp N     &kp M     &kp COMMA &kp DOT  &kp FSLH
-            //                                       &trans &none   &shift2   &kp LCTRL &kp LALT    &kp MINUS  &kp BSPC  &kp SPACE &none     &trans
-            // >;
+
