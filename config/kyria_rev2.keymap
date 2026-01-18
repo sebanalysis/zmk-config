@@ -58,16 +58,25 @@
         };
 
 
-    behaviors {
-        shift2: tap_dance_mod_tap {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MOD_TAP";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = 
-                <&kp LSHIFT &kp CAPSLOCK>;
-        };
-    };
+	behaviors {
+	
+	  /* Tap-dance: tap = Shift, double-tap = Caps Lock */
+	  shift2: shift2 {
+	    compatible = "zmk,behavior-tap-dance";
+	    label = "SHIFT2";
+	    #binding-cells = <0>;
+	    tapping-term-ms = <200>;
+	    bindings = <&kp LSHIFT>, <&kp CAPSLOCK>;
+	  };
+	
+	  /* Mouse scroll: remove ramp-up delay (instant scroll) */
+	  &msc {
+	    time-to-max-speed-ms = <0>;
+	    acceleration-exponent = <0>;
+	  };
+	
+	};
+
 	
 
     conditional_layers {
