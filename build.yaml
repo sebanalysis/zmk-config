@@ -11,26 +11,14 @@
 #   - board: nice_nano_v2
 #     shield: reviung41
 #
+
 ---
-# include:
-#   - board: nice_nano_v2
-#     shield: kyria_left
-#   - board: nice_nano_v2
-#     shield: kyria_right
-# include:
-#   - board: nice_nano_v2
-#     shield: kyria_left
-#   - board: nice_nano_v2
-#     shield: kyria_right
-# include:
-#   - board: nice_nano_v2
-#     shield: kyria_rev2_left
-#   - board: nice_nano_v2
-#     shield: kyria_rev2_right
+
 include:
-  # - board: nice_nano_v2
-  #   shield: kyria_rev2_left
-  # - board: nice_nano_v2
-  #   shield: kyria_rev2_right
   - board: nice_nano_v2
+    shield: kyria_rev2_left
+  - board: nice_nano_v2
+    shield: kyria_rev2_right
+  - board: nice_nano_v2
+  # to remove bluetooth settings first
     shield: settings_reset
