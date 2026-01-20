@@ -148,10 +148,10 @@
 
         mouse {      
             bindings = <
-                &none          &none            &none           &none       &none       &none                                                                       &none	       &none                &kp PG_UP       &kp PG_DN       &none       	&none    
-                &none          &none            &none           &none       &none       &none                                                                       &mkp LCLK      &mmv MOVE_LEFT       &mmv MOVE_UP    &mmv MOVE_DOWN  &mmv MOVE_RIGHT &mkp RCLK   
-                &trans         &none            &none           &none       &none       &none    &trans       &trans                    &trans     &trans           &none          &msc SCRL_LEFT		&msc SCRL_UP	&msc SCRL_DOWN	&msc SCRL_RIGHT &trans   
-                                                                &trans      &trans      &trans   &trans       &trans                    &trans     &trans           &trans         &trans               &trans
+                &none          &none            &none           &none           &none           &none                                                                       &none	       &none                &kp PG_UP       &kp PG_DN       &none       	&none    
+                &none          &mmv MOVE_LEFT   &mmv MOVE_UP    &mmv MOVE_DOWN  &mmv MOVE_RIGHT &none                                                                       &none          &mkp LCLK            &mkp RCLK       &none	        &none           &none 
+                &trans         &none            &none           &none           &none           &none    &trans       &trans                    &trans     &trans           &none          &msc SCRL_LEFT		&msc SCRL_UP	&msc SCRL_DOWN	&msc SCRL_RIGHT &trans   
+                                                                &trans          &trans          &trans   &trans       &trans                    &trans     &trans           &trans         &trans               &trans
             
                 >;
         };   
@@ -162,7 +162,7 @@
 /* Mouse scroll: remove ramp-up delay (instant scroll) */
 &msc {
 	time-to-max-speed-ms = <0>;
-	acceleration-exponent = <0>;
+	acceleration-exponent = <1>;
 };
 
 
