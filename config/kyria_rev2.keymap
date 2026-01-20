@@ -88,15 +88,15 @@
             bindings = <    
                 &kp ESC             &kp Q           &kp W           &kp F      &kp P       &kp B                                                                       &kp J           &kp L          &kp U          &kp Y          &kp SEMI       &kp DEL
                 &kp TAB             &kp A           &kp R           &kp S      &kp T       &kp G                                                                       &kp M           &kp N          &kp E          &kp I          &kp O          &kp SQT
-                &mo ARROW           &kp Z           &kp X           &kp C      &kp D       &kp V   &kp LGUI        &kp LSHIFT              &kp KP_PLUS      &kp RET    &kp K           &kp H          &kp COMMA      &kp DOT        &kp SLASH      &mo FUNC
-                                                                    &kp PSCRN  &mo NUMB    &shift2 &kp LCTRL       &kp LALT                &kp MINUS        &kp BSPC   &kp SPACE       &mo SYM        &mo MAUS
+                &mo ARROW           &kp Z           &kp X           &kp C      &kp D       &kp V   &kp LGUI        &kp LSHIFT              &mo ARROW        &kp RET    &kp K           &kp H          &kp COMMA      &kp DOT        &kp SLASH      &mo FUNC
+                                                                    &mo SYM    &mo NUMB    &shift2 &kp LCTRL       &kp LALT                &mo NUMB         &kp BSPC   &kp SPACE       &mo SYM        &mo MAUS
             >;            
             sensor-bindings = <&inc_dec_kp UP DOWN>;            
         };          
 
         sym {          
             bindings = <            
-                &kp GRAVE       &none           &kp LBRC        &kp RBRC    &none       &none                                                                     &none          &none               &none           &none           &kp KP_MINUS    &trans
+                &kp GRAVE       &none           &kp LBRC        &kp RBRC    &none       &none                                                                     &none          &none               &kp PSCRN       &kp UNDER       &kp KP_MINUS    &trans
                 &none           &kp LBKT        &kp RBKT        &kp LPAR    &kp RPAR    &none                                                                     &none          &kp EXCL            &kp PIPE        &kp TILDE       &kp EQUAL       &none
                 &trans          &none           &none           &none       &none       &none    &trans       &trans                    &trans      &trans        &none          &kp HASH            &none           &none           &kp BSLH        &trans
                                                                 &trans      &trans      &trans   &trans       &trans                    &trans      &trans        &trans         &trans              &trans                                           
@@ -106,9 +106,9 @@
 
         num {               
             bindings = <            
-                &kp GRAVE         &none           &none           &none       &none       &none                                                                      &kp CARET        &kp N7             &kp N8          &kp N9          &kp KP_MINUS    &trans
-                &none             &kp AT          &kp PRCNT       &kp AMPS    &kp DLLR    &none                                                                      &kp KP_PLUS      &kp N4             &kp N5          &kp N6          &kp DOT         &none
-                &trans            &none           &none           &none       &kp BSLH    &none   &trans       &trans                     &trans      &trans         &kp KP_ASTERISK  &kp N1             &kp N2          &kp N3          &kp KP_SLASH    &trans  
+                &kp GRAVE         &kp LBKT        &kp RBKT        &kp LPAR    &kp RPAR    &none                                                                      &kp CARET        &kp N7             &kp N8          &kp N9          &kp KP_MINUS    &trans
+                &none             &kp AT          &kp PRCNT       &kp AMPS    &kp DLLR    &none                                                                      &kp KP_PLUS      &kp N4             &kp N5          &kp N6          &kp DOT         &kp N0
+                &trans            &none           &none           &kp LBRC    &kp RBRC    &none   &trans       &trans                     &trans      &trans         &kp KP_ASTERISK  &kp N1             &kp N2          &kp N3          &kp KP_SLASH    &trans  
                                                                   &trans      &trans      &trans  &trans       &trans                     &trans      &trans         &trans           &kp N0             &trans                                               
             
             >;              
