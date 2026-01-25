@@ -18,6 +18,12 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20   // default: 10
 #include <dt-bindings/zmk/pointing.h>
 
+/* Mouse scroll: remove ramp-up delay (instant scroll) */
+&msc {
+	time-to-max-speed-ms = <0>;
+	acceleration-exponent = <1>;
+};
+
 
 #define DEFAULT 0
 #define SYM 1
@@ -157,13 +163,11 @@
         }; 
 
     };
+
+
 };
 
-/* Mouse scroll: remove ramp-up delay (instant scroll) */
-&msc {
-	time-to-max-speed-ms = <0>;
-	acceleration-exponent = <1>;
-};
+
 
 
 
